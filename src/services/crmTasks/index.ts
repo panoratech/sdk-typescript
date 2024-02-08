@@ -1,0 +1,9 @@
+export type { AddTaskResponse } from './models/AddTaskResponse';
+export type { AddTasksRequest } from './models/AddTasksRequest';
+export type { AddTasksResponse } from './models/AddTasksResponse';
+export type { CrmTasksAddTasksResponse } from './models/CrmTasksAddTasksResponse';
+export type { GetTaskResponse } from './models/GetTaskResponse';
+export type { GetTasksResponse } from './models/GetTasksResponse';
+export type { UnifiedTaskInput } from './models/UnifiedTaskInput';
+export type { UnifiedTaskOutput } from './models/UnifiedTaskOutput';
+export type { UpdateTaskResponse } from './models/UpdateTaskResponse';

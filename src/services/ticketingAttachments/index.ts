@@ -1,0 +1,9 @@
+export type { AddAttachmentResponse } from './models/AddAttachmentResponse';
+export type { AddAttachmentsRequest } from './models/AddAttachmentsRequest';
+export type { AddAttachmentsResponse } from './models/AddAttachmentsResponse';
+export type { DownloadAttachmentResponse } from './models/DownloadAttachmentResponse';
+export type { GetAttachmentResponse } from './models/GetAttachmentResponse';
+export type { GetAttachmentsResponse } from './models/GetAttachmentsResponse';
+export type { TicketingAttachmentsAddAttachmentsResponse } from './models/TicketingAttachmentsAddAttachmentsResponse';
+export type { UnifiedAttachmentInput } from './models/UnifiedAttachmentInput';
+export type { UnifiedAttachmentOutput } from '../common/UnifiedAttachmentOutput';

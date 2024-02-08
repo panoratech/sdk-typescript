@@ -1,0 +1,9 @@
+export type { AddDealResponse } from './models/AddDealResponse';
+export type { AddDealsRequest } from './models/AddDealsRequest';
+export type { AddDealsResponse } from './models/AddDealsResponse';
+export type { CrmDealsAddDealsResponse } from './models/CrmDealsAddDealsResponse';
+export type { GetDealResponse } from './models/GetDealResponse';
+export type { GetDealsResponse } from './models/GetDealsResponse';
+export type { UnifiedDealInput } from './models/UnifiedDealInput';
+export type { UnifiedDealOutput } from './models/UnifiedDealOutput';
+export type { UpdateDealResponse } from './models/UpdateDealResponse';
