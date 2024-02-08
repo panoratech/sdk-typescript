@@ -48,10 +48,10 @@
     "release": "changeset publish",
     "cversion": "changeset version"
   },
-  "name": "panorasdk",
-  "description": "PanoraSDK - The Panora API description",
+  "name": "@panora/sdk-typescript",
+  "description": "The Panora SDK",
   "version": "1.0.0",
-  "author": "PanoraSDK",
+  "author": "Panora",
   "dependencies": {
     "@changesets/cli": "^2.27.1",
     "axios": "^1.0.0"
