@@ -343,7 +343,7 @@ Returns a dict object.
 
 **Example Usage Code Snippet**
 ```Typescript
-import { PanoraSDK } from 'panorasdk';
+import { PanoraSDK } from '@panora/sdk-typescript';
 
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
@@ -369,7 +369,7 @@ Returns a dict object.
 
 **Example Usage Code Snippet**
 ```Typescript
-import { PanoraSDK } from 'panorasdk';
+import { PanoraSDK } from '@panora/sdk-typescript';
 
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
@@ -395,7 +395,7 @@ Returns a dict object.
 
 **Example Usage Code Snippet**
 ```Typescript
-import { PanoraSDK } from 'panorasdk';
+import { PanoraSDK } from '@panora/sdk-typescript';
 
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
@@ -424,7 +424,7 @@ Returns a dict object.
 
 **Example Usage Code Snippet**
 ```Typescript
-import { PanoraSDK } from 'panorasdk';
+import { PanoraSDK } from '@panora/sdk-typescript';
 
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
@@ -459,7 +459,7 @@ Returns a dict object.
 
 **Example Usage Code Snippet**
 ```Typescript
-import { PanoraSDK } from 'panorasdk';
+import { PanoraSDK } from '@panora/sdk-typescript';
 
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
@@ -485,7 +485,7 @@ Returns a dict object.
 
 **Example Usage Code Snippet**
 ```Typescript
-import { PanoraSDK } from 'panorasdk';
+import { PanoraSDK } from '@panora/sdk-typescript';
 
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
@@ -510,7 +510,7 @@ Returns a dict object.
 
 **Example Usage Code Snippet**
 ```Typescript
-import { PanoraSDK } from 'panorasdk';
+import { PanoraSDK } from '@panora/sdk-typescript';
 
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
@@ -538,7 +538,7 @@ Returns a dict object.
 
 **Example Usage Code Snippet**
 ```Typescript
-import { PanoraSDK } from 'panorasdk';
+import { PanoraSDK } from '@panora/sdk-typescript';
 
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
@@ -572,7 +572,7 @@ Returns a dict object.
 
 **Example Usage Code Snippet**
 ```Typescript
-import { PanoraSDK } from 'panorasdk';
+import { PanoraSDK } from '@panora/sdk-typescript';
 
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
@@ -597,7 +597,7 @@ Returns a dict object.
 
 **Example Usage Code Snippet**
 ```Typescript
-import { PanoraSDK } from 'panorasdk';
+import { PanoraSDK } from '@panora/sdk-typescript';
 
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
@@ -626,7 +626,7 @@ Returns a dict object.
 
 **Example Usage Code Snippet**
 ```Typescript
-import { PanoraSDK } from 'panorasdk';
+import { PanoraSDK } from '@panora/sdk-typescript';
 
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
@@ -657,7 +657,7 @@ Returns a dict object.
 
 **Example Usage Code Snippet**
 ```Typescript
-import { PanoraSDK } from 'panorasdk';
+import { PanoraSDK } from '@panora/sdk-typescript';
 
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
@@ -687,7 +687,7 @@ Returns a dict object.
 
 **Example Usage Code Snippet**
 ```Typescript
-import { PanoraSDK } from 'panorasdk';
+import { PanoraSDK } from '@panora/sdk-typescript';
 
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
@@ -716,7 +716,7 @@ Returns a dict object.
 
 **Example Usage Code Snippet**
 ```Typescript
-import { PanoraSDK } from 'panorasdk';
+import { PanoraSDK } from '@panora/sdk-typescript';
 
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
@@ -746,7 +746,7 @@ Returns a dict object.
 
 **Example Usage Code Snippet**
 ```Typescript
-import { PanoraSDK } from 'panorasdk';
+import { PanoraSDK } from '@panora/sdk-typescript';
 
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
@@ -776,7 +776,7 @@ Returns a dict object.
 
 **Example Usage Code Snippet**
 ```Typescript
-import { PanoraSDK } from 'panorasdk';
+import { PanoraSDK } from '@panora/sdk-typescript';
 
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
@@ -802,7 +802,7 @@ Returns a dict object.
 
 **Example Usage Code Snippet**
 ```Typescript
-import { PanoraSDK } from 'panorasdk';
+import { PanoraSDK } from '@panora/sdk-typescript';
 
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
@@ -830,7 +830,7 @@ Returns a dict object.
 
 **Example Usage Code Snippet**
 ```Typescript
-import { PanoraSDK } from 'panorasdk';
+import { PanoraSDK } from '@panora/sdk-typescript';
 
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
@@ -857,7 +857,7 @@ Returns a dict object.
 
 **Example Usage Code Snippet**
 ```Typescript
-import { PanoraSDK } from 'panorasdk';
+import { PanoraSDK } from '@panora/sdk-typescript';
 
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
@@ -885,7 +885,7 @@ Returns a dict object.
 
 **Example Usage Code Snippet**
 ```Typescript
-import { PanoraSDK } from 'panorasdk';
+import { PanoraSDK } from '@panora/sdk-typescript';
 
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
@@ -912,7 +912,7 @@ Returns a dict object.
 
 **Example Usage Code Snippet**
 ```Typescript
-import { PanoraSDK } from 'panorasdk';
+import { PanoraSDK } from '@panora/sdk-typescript';
 
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
@@ -937,7 +937,7 @@ Returns a dict object.
 
 **Example Usage Code Snippet**
 ```Typescript
-import { PanoraSDK } from 'panorasdk';
+import { PanoraSDK } from '@panora/sdk-typescript';
 
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
@@ -962,7 +962,7 @@ Returns a dict object.
 
 **Example Usage Code Snippet**
 ```Typescript
-import { PanoraSDK } from 'panorasdk';
+import { PanoraSDK } from '@panora/sdk-typescript';
 
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
@@ -990,7 +990,7 @@ Returns a dict object.
 
 **Example Usage Code Snippet**
 ```Typescript
-import { PanoraSDK } from 'panorasdk';
+import { PanoraSDK } from '@panora/sdk-typescript';
 
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
@@ -1024,7 +1024,7 @@ Returns a dict object.
 
 **Example Usage Code Snippet**
 ```Typescript
-import { PanoraSDK } from 'panorasdk';
+import { PanoraSDK } from '@panora/sdk-typescript';
 
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
@@ -1061,7 +1061,7 @@ Returns a dict object.
 
 **Example Usage Code Snippet**
 ```Typescript
-import { PanoraSDK } from 'panorasdk';
+import { PanoraSDK } from '@panora/sdk-typescript';
 
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
@@ -1087,7 +1087,7 @@ Returns a dict object.
 
 **Example Usage Code Snippet**
 ```Typescript
-import { PanoraSDK } from 'panorasdk';
+import { PanoraSDK } from '@panora/sdk-typescript';
 
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
@@ -1116,7 +1116,7 @@ Returns a dict object.
 
 **Example Usage Code Snippet**
 ```Typescript
-import { PanoraSDK } from 'panorasdk';
+import { PanoraSDK } from '@panora/sdk-typescript';
 
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
@@ -1147,7 +1147,7 @@ Returns a dict object.
 
 **Example Usage Code Snippet**
 ```Typescript
-import { PanoraSDK } from 'panorasdk';
+import { PanoraSDK } from '@panora/sdk-typescript';
 
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
@@ -1177,7 +1177,7 @@ Returns a dict object.
 
 **Example Usage Code Snippet**
 ```Typescript
-import { PanoraSDK } from 'panorasdk';
+import { PanoraSDK } from '@panora/sdk-typescript';
 
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
@@ -1210,7 +1210,7 @@ PassThroughResponse
 
 **Example Usage Code Snippet**
 ```Typescript
-import { PanoraSDK } from 'panorasdk';
+import { PanoraSDK } from '@panora/sdk-typescript';
 
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
@@ -1251,7 +1251,7 @@ UnifiedContactOutput
 
 **Example Usage Code Snippet**
 ```Typescript
-import { PanoraSDK } from 'panorasdk';
+import { PanoraSDK } from '@panora/sdk-typescript';
 
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
@@ -1297,7 +1297,7 @@ GetContactsResponse
 
 **Example Usage Code Snippet**
 ```Typescript
-import { PanoraSDK } from 'panorasdk';
+import { PanoraSDK } from '@panora/sdk-typescript';
 
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
@@ -1327,7 +1327,7 @@ UnifiedContactOutput
 
 **Example Usage Code Snippet**
 ```Typescript
-import { PanoraSDK } from 'panorasdk';
+import { PanoraSDK } from '@panora/sdk-typescript';
 
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
@@ -1364,7 +1364,7 @@ GetContactResponse
 
 **Example Usage Code Snippet**
 ```Typescript
-import { PanoraSDK } from 'panorasdk';
+import { PanoraSDK } from '@panora/sdk-typescript';
 
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
@@ -1403,7 +1403,7 @@ CrmContactsAddContactsResponse
 
 **Example Usage Code Snippet**
 ```Typescript
-import { PanoraSDK } from 'panorasdk';
+import { PanoraSDK } from '@panora/sdk-typescript';
 
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
@@ -1444,7 +1444,7 @@ UnifiedDealOutput
 
 **Example Usage Code Snippet**
 ```Typescript
-import { PanoraSDK } from 'panorasdk';
+import { PanoraSDK } from '@panora/sdk-typescript';
 
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
@@ -1482,7 +1482,7 @@ GetDealsResponse
 
 **Example Usage Code Snippet**
 ```Typescript
-import { PanoraSDK } from 'panorasdk';
+import { PanoraSDK } from '@panora/sdk-typescript';
 
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
@@ -1519,7 +1519,7 @@ GetDealResponse
 
 **Example Usage Code Snippet**
 ```Typescript
-import { PanoraSDK } from 'panorasdk';
+import { PanoraSDK } from '@panora/sdk-typescript';
 
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
@@ -1549,7 +1549,7 @@ UpdateDealResponse
 
 **Example Usage Code Snippet**
 ```Typescript
-import { PanoraSDK } from 'panorasdk';
+import { PanoraSDK } from '@panora/sdk-typescript';
 
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
@@ -1588,7 +1588,7 @@ CrmDealsAddDealsResponse
 
 **Example Usage Code Snippet**
 ```Typescript
-import { PanoraSDK } from 'panorasdk';
+import { PanoraSDK } from '@panora/sdk-typescript';
 
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
@@ -1629,7 +1629,7 @@ UnifiedNoteOutput
 
 **Example Usage Code Snippet**
 ```Typescript
-import { PanoraSDK } from 'panorasdk';
+import { PanoraSDK } from '@panora/sdk-typescript';
 
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
@@ -1667,7 +1667,7 @@ GetNotesResponse
 
 **Example Usage Code Snippet**
 ```Typescript
-import { PanoraSDK } from 'panorasdk';
+import { PanoraSDK } from '@panora/sdk-typescript';
 
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
@@ -1704,7 +1704,7 @@ GetNoteResponse
 
 **Example Usage Code Snippet**
 ```Typescript
-import { PanoraSDK } from 'panorasdk';
+import { PanoraSDK } from '@panora/sdk-typescript';
 
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
@@ -1743,7 +1743,7 @@ CrmNotesAddNotesResponse
 
 **Example Usage Code Snippet**
 ```Typescript
-import { PanoraSDK } from 'panorasdk';
+import { PanoraSDK } from '@panora/sdk-typescript';
 
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
@@ -1784,7 +1784,7 @@ UnifiedCompanyOutput
 
 **Example Usage Code Snippet**
 ```Typescript
-import { PanoraSDK } from 'panorasdk';
+import { PanoraSDK } from '@panora/sdk-typescript';
 
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
@@ -1822,7 +1822,7 @@ GetCompaniesResponse
 
 **Example Usage Code Snippet**
 ```Typescript
-import { PanoraSDK } from 'panorasdk';
+import { PanoraSDK } from '@panora/sdk-typescript';
 
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
@@ -1852,7 +1852,7 @@ UpdateCompanyResponse
 
 **Example Usage Code Snippet**
 ```Typescript
-import { PanoraSDK } from 'panorasdk';
+import { PanoraSDK } from '@panora/sdk-typescript';
 
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
@@ -1889,7 +1889,7 @@ GetCompanyResponse
 
 **Example Usage Code Snippet**
 ```Typescript
-import { PanoraSDK } from 'panorasdk';
+import { PanoraSDK } from '@panora/sdk-typescript';
 
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
@@ -1928,7 +1928,7 @@ CrmCompaniesAddCompaniesResponse
 
 **Example Usage Code Snippet**
 ```Typescript
-import { PanoraSDK } from 'panorasdk';
+import { PanoraSDK } from '@panora/sdk-typescript';
 
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
@@ -1971,7 +1971,7 @@ UnifiedEngagementOutput
 
 **Example Usage Code Snippet**
 ```Typescript
-import { PanoraSDK } from 'panorasdk';
+import { PanoraSDK } from '@panora/sdk-typescript';
 
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
@@ -2011,7 +2011,7 @@ GetEngagementsResponse
 
 **Example Usage Code Snippet**
 ```Typescript
-import { PanoraSDK } from 'panorasdk';
+import { PanoraSDK } from '@panora/sdk-typescript';
 
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
@@ -2041,7 +2041,7 @@ UpdateEngagementResponse
 
 **Example Usage Code Snippet**
 ```Typescript
-import { PanoraSDK } from 'panorasdk';
+import { PanoraSDK } from '@panora/sdk-typescript';
 
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
@@ -2078,7 +2078,7 @@ GetEngagementResponse
 
 **Example Usage Code Snippet**
 ```Typescript
-import { PanoraSDK } from 'panorasdk';
+import { PanoraSDK } from '@panora/sdk-typescript';
 
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
@@ -2117,7 +2117,7 @@ CrmEngagementsAddEngagementsResponse
 
 **Example Usage Code Snippet**
 ```Typescript
-import { PanoraSDK } from 'panorasdk';
+import { PanoraSDK } from '@panora/sdk-typescript';
 
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
@@ -2158,7 +2158,7 @@ GetStagesResponse
 
 **Example Usage Code Snippet**
 ```Typescript
-import { PanoraSDK } from 'panorasdk';
+import { PanoraSDK } from '@panora/sdk-typescript';
 
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
@@ -2195,7 +2195,7 @@ GetStageResponse
 
 **Example Usage Code Snippet**
 ```Typescript
-import { PanoraSDK } from 'panorasdk';
+import { PanoraSDK } from '@panora/sdk-typescript';
 
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
@@ -2235,7 +2235,7 @@ UnifiedTaskOutput
 
 **Example Usage Code Snippet**
 ```Typescript
-import { PanoraSDK } from 'panorasdk';
+import { PanoraSDK } from '@panora/sdk-typescript';
 
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
@@ -2273,7 +2273,7 @@ GetTasksResponse
 
 **Example Usage Code Snippet**
 ```Typescript
-import { PanoraSDK } from 'panorasdk';
+import { PanoraSDK } from '@panora/sdk-typescript';
 
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
@@ -2303,7 +2303,7 @@ UpdateTaskResponse
 
 **Example Usage Code Snippet**
 ```Typescript
-import { PanoraSDK } from 'panorasdk';
+import { PanoraSDK } from '@panora/sdk-typescript';
 
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
@@ -2340,7 +2340,7 @@ GetTaskResponse
 
 **Example Usage Code Snippet**
 ```Typescript
-import { PanoraSDK } from 'panorasdk';
+import { PanoraSDK } from '@panora/sdk-typescript';
 
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
@@ -2379,7 +2379,7 @@ CrmTasksAddTasksResponse
 
 **Example Usage Code Snippet**
 ```Typescript
-import { PanoraSDK } from 'panorasdk';
+import { PanoraSDK } from '@panora/sdk-typescript';
 
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
@@ -2418,7 +2418,7 @@ GetUsersResponse
 
 **Example Usage Code Snippet**
 ```Typescript
-import { PanoraSDK } from 'panorasdk';
+import { PanoraSDK } from '@panora/sdk-typescript';
 
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
@@ -2455,7 +2455,7 @@ GetUserResponse
 
 **Example Usage Code Snippet**
 ```Typescript
-import { PanoraSDK } from 'panorasdk';
+import { PanoraSDK } from '@panora/sdk-typescript';
 
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
@@ -2495,7 +2495,7 @@ UnifiedTicketOutput
 
 **Example Usage Code Snippet**
 ```Typescript
-import { PanoraSDK } from 'panorasdk';
+import { PanoraSDK } from '@panora/sdk-typescript';
 
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
@@ -2550,7 +2550,7 @@ GetTicketsResponse
 
 **Example Usage Code Snippet**
 ```Typescript
-import { PanoraSDK } from 'panorasdk';
+import { PanoraSDK } from '@panora/sdk-typescript';
 
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
@@ -2580,7 +2580,7 @@ UnifiedTicketOutput
 
 **Example Usage Code Snippet**
 ```Typescript
-import { PanoraSDK } from 'panorasdk';
+import { PanoraSDK } from '@panora/sdk-typescript';
 
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
@@ -2617,7 +2617,7 @@ GetTicketResponse
 
 **Example Usage Code Snippet**
 ```Typescript
-import { PanoraSDK } from 'panorasdk';
+import { PanoraSDK } from '@panora/sdk-typescript';
 
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
@@ -2656,7 +2656,7 @@ TicketingTicketsAddTicketsResponse
 
 **Example Usage Code Snippet**
 ```Typescript
-import { PanoraSDK } from 'panorasdk';
+import { PanoraSDK } from '@panora/sdk-typescript';
 
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
@@ -2699,7 +2699,7 @@ UnifiedCommentOutput
 
 **Example Usage Code Snippet**
 ```Typescript
-import { PanoraSDK } from 'panorasdk';
+import { PanoraSDK } from '@panora/sdk-typescript';
 
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
@@ -2748,7 +2748,7 @@ GetCommentsResponse
 
 **Example Usage Code Snippet**
 ```Typescript
-import { PanoraSDK } from 'panorasdk';
+import { PanoraSDK } from '@panora/sdk-typescript';
 
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
@@ -2785,7 +2785,7 @@ GetCommentResponse
 
 **Example Usage Code Snippet**
 ```Typescript
-import { PanoraSDK } from 'panorasdk';
+import { PanoraSDK } from '@panora/sdk-typescript';
 
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
@@ -2824,7 +2824,7 @@ TicketingCommentsAddCommentsResponse
 
 **Example Usage Code Snippet**
 ```Typescript
-import { PanoraSDK } from 'panorasdk';
+import { PanoraSDK } from '@panora/sdk-typescript';
 
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
@@ -2865,7 +2865,7 @@ GetUsersResponse
 
 **Example Usage Code Snippet**
 ```Typescript
-import { PanoraSDK } from 'panorasdk';
+import { PanoraSDK } from '@panora/sdk-typescript';
 
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
@@ -2902,7 +2902,7 @@ GetUserResponse
 
 **Example Usage Code Snippet**
 ```Typescript
-import { PanoraSDK } from 'panorasdk';
+import { PanoraSDK } from '@panora/sdk-typescript';
 
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
@@ -2942,7 +2942,7 @@ UnifiedAttachmentOutput
 
 **Example Usage Code Snippet**
 ```Typescript
-import { PanoraSDK } from 'panorasdk';
+import { PanoraSDK } from '@panora/sdk-typescript';
 
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
@@ -2987,7 +2987,7 @@ GetAttachmentsResponse
 
 **Example Usage Code Snippet**
 ```Typescript
-import { PanoraSDK } from 'panorasdk';
+import { PanoraSDK } from '@panora/sdk-typescript';
 
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
@@ -3026,7 +3026,7 @@ GetAttachmentResponse
 
 **Example Usage Code Snippet**
 ```Typescript
-import { PanoraSDK } from 'panorasdk';
+import { PanoraSDK } from '@panora/sdk-typescript';
 
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
@@ -3063,7 +3063,7 @@ DownloadAttachmentResponse
 
 **Example Usage Code Snippet**
 ```Typescript
-import { PanoraSDK } from 'panorasdk';
+import { PanoraSDK } from '@panora/sdk-typescript';
 
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
@@ -3102,7 +3102,7 @@ TicketingAttachmentsAddAttachmentsResponse
 
 **Example Usage Code Snippet**
 ```Typescript
-import { PanoraSDK } from 'panorasdk';
+import { PanoraSDK } from '@panora/sdk-typescript';
 
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
@@ -3143,7 +3143,7 @@ GetContactsResponse
 
 **Example Usage Code Snippet**
 ```Typescript
-import { PanoraSDK } from 'panorasdk';
+import { PanoraSDK } from '@panora/sdk-typescript';
 
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
@@ -3180,7 +3180,7 @@ GetContactResponse
 
 **Example Usage Code Snippet**
 ```Typescript
-import { PanoraSDK } from 'panorasdk';
+import { PanoraSDK } from '@panora/sdk-typescript';
 
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
@@ -3218,7 +3218,7 @@ GetAccountsResponse
 
 **Example Usage Code Snippet**
 ```Typescript
-import { PanoraSDK } from 'panorasdk';
+import { PanoraSDK } from '@panora/sdk-typescript';
 
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
@@ -3255,7 +3255,7 @@ GetAccountResponse
 
 **Example Usage Code Snippet**
 ```Typescript
-import { PanoraSDK } from 'panorasdk';
+import { PanoraSDK } from '@panora/sdk-typescript';
 
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
@@ -3293,7 +3293,7 @@ GetTagsResponse
 
 **Example Usage Code Snippet**
 ```Typescript
-import { PanoraSDK } from 'panorasdk';
+import { PanoraSDK } from '@panora/sdk-typescript';
 
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
@@ -3330,7 +3330,7 @@ GetTagResponse
 
 **Example Usage Code Snippet**
 ```Typescript
-import { PanoraSDK } from 'panorasdk';
+import { PanoraSDK } from '@panora/sdk-typescript';
 
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
@@ -3368,7 +3368,7 @@ GetTeamsResponse
 
 **Example Usage Code Snippet**
 ```Typescript
-import { PanoraSDK } from 'panorasdk';
+import { PanoraSDK } from '@panora/sdk-typescript';
 
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
@@ -3405,7 +3405,7 @@ GetTeamResponse
 
 **Example Usage Code Snippet**
 ```Typescript
-import { PanoraSDK } from 'panorasdk';
+import { PanoraSDK } from '@panora/sdk-typescript';
 
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
