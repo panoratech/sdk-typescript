@@ -15,10 +15,10 @@
     "README.md"
   ],
   "devDependencies": {
+    "@types/jest": "^29.5.6",
+    "@types/node": "^17.0.23",
     "@typescript-eslint/eslint-plugin": "^5.43.0",
     "@typescript-eslint/parser": "^5.43.0",
-    "@types/node": "^17.0.23",
-    "@types/jest": "^29.5.6",
     "eslint": "^8.20.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-config-airbnb-typescript": "^17.0.0",
@@ -48,11 +48,12 @@
     "release": "changeset publish",
     "cversion": "changeset version"
   },
-  "name": "panorasdk",
-  "description": "PanoraSDK - The Panora API description",
+  "name": "@panora/sdk-typescript",
+  "description": "The Panora SDK description",
   "version": "1.0.0",
   "author": "PanoraSDK",
   "dependencies": {
+    "@changesets/cli": "^2.27.1",
     "axios": "^1.0.0"
   },
   "license": "MIT"
