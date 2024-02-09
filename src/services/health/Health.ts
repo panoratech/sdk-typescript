@@ -1,7 +1,7 @@
 import BaseService from '../../BaseService';
 
 export class HealthService extends BaseService {
-  async appControllerHealth(): Promise<any> {
+  async getHealth(): Promise<any> {
     const urlEndpoint = '/health';
     const finalUrl = encodeURI(`${this.baseUrl + urlEndpoint}`);
     const response: any = await this.httpClient.get(

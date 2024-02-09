@@ -19,10 +19,10 @@ describe('test Health', () => {
     nock.cleanAll();
   });
 
-  describe('test appControllerHealth', () => {
+  describe('test getHealth', () => {
     test('test api call', () => {
       const scope = nock('https://api-dev.panora.dev').get('/health').reply(200, { data: {} });
-      return sdk.health.appControllerHealth().then((r: any) => expect(r.data).toEqual({}));
+      return sdk.health.getHealth().then((r: any) => expect(r.data).toEqual({}));
     });
   });
 });

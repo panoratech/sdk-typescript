@@ -25,7 +25,7 @@ describe('test CrmDeals', () => {
         .get('/crm/deals?remote_data=true')
         .reply(200, { data: {} });
       return sdk.crmDeals
-        .getDeals('aliquam', { remoteData: true })
+        .getDeals('exercitationem', { remoteData: true })
         .then((r: any) => expect(r.data).toEqual({}));
     });
 
@@ -41,7 +41,7 @@ describe('test CrmDeals', () => {
         .get('/crm/deals?remote_data=true')
         .reply(404, { data: {} });
       return expect(
-        async () => await sdk.crmDeals.getDeals('doloremque', { remoteData: true }),
+        async () => await sdk.crmDeals.getDeals('rem', { remoteData: true }),
       ).rejects.toThrow();
     });
   });
@@ -52,7 +52,7 @@ describe('test CrmDeals', () => {
         .post('/crm/deals?remote_data=true')
         .reply(200, { data: {} });
       return sdk.crmDeals
-        .addDeal({}, 'doloribus', { remoteData: true })
+        .addDeal({}, 'veritatis', { remoteData: true })
         .then((r: any) => expect(r.data).toEqual({}));
     });
 
@@ -68,7 +68,7 @@ describe('test CrmDeals', () => {
         .post('/crm/deals?remote_data=true')
         .reply(404, { data: {} });
       return expect(
-        async () => await sdk.crmDeals.addDeal({}, 'at', { remoteData: true }),
+        async () => await sdk.crmDeals.addDeal({}, 'nisi', { remoteData: true }),
       ).rejects.toThrow();
     });
   });
@@ -76,26 +76,26 @@ describe('test CrmDeals', () => {
   describe('test getDeal', () => {
     test('test api call', () => {
       const scope = nock('https://api-dev.panora.dev')
-        .get('/crm/deals/2664643614?remote_data=true')
+        .get('/crm/deals/9130170700?remote_data=true')
         .reply(200, { data: {} });
       return sdk.crmDeals
-        .getDeal('2664643614', { remoteData: true })
+        .getDeal('9130170700', { remoteData: true })
         .then((r: any) => expect(r.data).toEqual({}));
     });
 
     test('test will throw error if required fields missing', () => {
       const scope = nock('https://api-dev.panora.dev')
-        .get('/crm/deals/1457041999?remote_data=true')
+        .get('/crm/deals/2165122493?remote_data=true')
         .reply(200, { data: {} });
       return expect(async () => await sdk.crmDeals.getDeal()).rejects.toThrow();
     });
 
     test('test will throw error on a non-200 response', () => {
       const scope = nock('https://api-dev.panora.dev')
-        .get('/crm/deals/2377821653?remote_data=true')
+        .get('/crm/deals/9375937056?remote_data=true')
         .reply(404, { data: {} });
       return expect(
-        async () => await sdk.crmDeals.getDeal('2377821653', { remoteData: true }),
+        async () => await sdk.crmDeals.getDeal('9375937056', { remoteData: true }),
       ).rejects.toThrow();
     });
   });
@@ -103,23 +103,23 @@ describe('test CrmDeals', () => {
   describe('test updateDeal', () => {
     test('test api call', () => {
       const scope = nock('https://api-dev.panora.dev')
-        .patch('/crm/deals/4878976968')
+        .patch('/crm/deals/5953265923')
         .reply(200, { data: {} });
-      return sdk.crmDeals.updateDeal('4878976968').then((r: any) => expect(r.data).toEqual({}));
+      return sdk.crmDeals.updateDeal('5953265923').then((r: any) => expect(r.data).toEqual({}));
     });
 
     test('test will throw error if required fields missing', () => {
       const scope = nock('https://api-dev.panora.dev')
-        .patch('/crm/deals/2203319079')
+        .patch('/crm/deals/5142793957')
         .reply(200, { data: {} });
       return expect(async () => await sdk.crmDeals.updateDeal()).rejects.toThrow();
     });
 
     test('test will throw error on a non-200 response', () => {
       const scope = nock('https://api-dev.panora.dev')
-        .patch('/crm/deals/4081720380')
+        .patch('/crm/deals/3959943376')
         .reply(404, { data: {} });
-      return expect(async () => await sdk.crmDeals.updateDeal('4081720380')).rejects.toThrow();
+      return expect(async () => await sdk.crmDeals.updateDeal('3959943376')).rejects.toThrow();
     });
   });
 
@@ -129,7 +129,7 @@ describe('test CrmDeals', () => {
         .post('/crm/deals/batch?remote_data=true')
         .reply(200, { data: {} });
       return sdk.crmDeals
-        .addDeals({}, 'laboriosam', { remoteData: true })
+        .addDeals({}, 'ut', { remoteData: true })
         .then((r: any) => expect(r.data).toEqual({}));
     });
 
@@ -145,7 +145,7 @@ describe('test CrmDeals', () => {
         .post('/crm/deals/batch?remote_data=true')
         .reply(404, { data: {} });
       return expect(
-        async () => await sdk.crmDeals.addDeals({}, 'ad', { remoteData: true }),
+        async () => await sdk.crmDeals.addDeals({}, 'ullam', { remoteData: true }),
       ).rejects.toThrow();
     });
   });

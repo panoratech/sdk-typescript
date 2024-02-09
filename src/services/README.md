@@ -66,21 +66,21 @@ A list of all services and services methods.
 
 | Method    | Description|
 | :-------- | :----------|
-| [appControllerGetHello](#appcontrollergethello) |  |
+| [getHello](#gethello) |  |
 
 
 ## Health
 
 | Method    | Description|
 | :-------- | :----------|
-| [appControllerHealth](#appcontrollerhealth) |  |
+| [getHealth](#gethealth) |  |
 
 
 ## Protected
 
 | Method    | Description|
 | :-------- | :----------|
-| [appControllerGetHello2](#appcontrollergethello2) |  |
+| [getHelloProtected](#gethelloprotected) |  |
 
 
 ## Auth
@@ -329,7 +329,7 @@ A list of all services and services methods.
 ## All Methods
 
 
-### **appControllerGetHello**
+### **getHello**
 
 - HTTP Method: GET
 - Endpoint: /
@@ -348,14 +348,14 @@ import { PanoraSDK } from 'panorasdk';
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
 (async () => {
-  const result = await sdk.main.appControllerGetHello();
+  const result = await sdk.main.getHello();
   console.log(result);
 })();
 
 ```
 
 
-### **appControllerHealth**
+### **getHealth**
 
 - HTTP Method: GET
 - Endpoint: /health
@@ -374,14 +374,14 @@ import { PanoraSDK } from 'panorasdk';
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
 (async () => {
-  const result = await sdk.health.appControllerHealth();
+  const result = await sdk.health.getHealth();
   console.log(result);
 })();
 
 ```
 
 
-### **appControllerGetHello2**
+### **getHelloProtected**
 
 - HTTP Method: GET
 - Endpoint: /protected
@@ -400,7 +400,7 @@ import { PanoraSDK } from 'panorasdk';
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
 (async () => {
-  const result = await sdk.protected.appControllerGetHello2();
+  const result = await sdk.protected.getHelloProtected();
   console.log(result);
 })();
 
@@ -634,7 +634,7 @@ const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
   const input = {
     description: 'description',
     id_project: 'id_project',
-    scope: ['aute dolor ullamco', 'id'],
+    scope: ['sit cupidatat ut', 'magna reprehenderit'],
     url: 'url',
   };
   const result = await sdk.webhook.createWebhookMetadata(input);
@@ -1215,7 +1215,7 @@ import { PanoraSDK } from 'panorasdk';
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
 (async () => {
-  const input = { data: {}, headers_: {}, method: 'DELETE', path: 'path' };
+  const input = { data: {}, headers_: {}, method: 'PATCH', path: 'path' };
   const result = await sdk.passthrough.passthroughRequest(input, 'integrationId', 'linkedUserId');
   console.log(result);
 })();
@@ -2502,18 +2502,18 @@ const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 (async () => {
   const input = {
     account_id: 'account_id',
-    assigned_to: ['dolore mollit', 'dolor ut'],
-    comment: ['sunt ea deserunt labore', 'sint'],
-    completed_at: '1944-01-11T20:56:01.0Z',
+    assigned_to: ['aliquip', 'enim'],
+    comment: ['pariatur nulla deserunt', 'irure incididunt Duis minim'],
+    completed_at: '1912-09-29T15:29:41.0Z',
     contact_id: 'contact_id',
-    description: ['ea minim aute elit eu', 'laborum dolor reprehenderit'],
-    due_date: '1943-11-18T12:02:47.0Z',
+    description: ['Duis nostrud in', 'magna adipisicing'],
+    due_date: '1945-12-08T15:08:52.0Z',
     field_mappings: {},
     name: 'name',
     parent_ticket: 'parent_ticket',
     priority: 'priority',
     status: 'status',
-    tags: ['in', 'eu aute ullamco est nulla'],
+    tags: ['cillum', 'officia dolore'],
     type_: 'type',
   };
   const result = await sdk.ticketingTickets.addTicket(input, 'connection_token', {
@@ -2705,7 +2705,7 @@ const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
 (async () => {
   const input = {
-    attachments: ['Duis qui aliquip Ut in', 'ullamco'],
+    attachments: ['cillum sint dolor anim magna', 'labore mollit magna elit'],
     body: 'body',
     contact_id: 'contact_id',
     creator_type: 'creator_type',
