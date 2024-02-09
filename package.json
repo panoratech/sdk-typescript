@@ -50,7 +50,7 @@
   },
   "name": "@panora/sdk-typescript",
   "description": "The Panora SDK description",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "author": "PanoraSDK",
   "dependencies": {
     "@changesets/cli": "^2.27.1",
