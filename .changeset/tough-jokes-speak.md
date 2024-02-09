@@ -1,0 +1,5 @@
+---
+'panorasdk': minor
+---
+
+updates
