@@ -1,5 +1,0 @@
----
-'panorasdk': minor
----
-
-readme

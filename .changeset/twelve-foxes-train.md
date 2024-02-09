@@ -1,5 +1,0 @@
----
-'panorasdk': patch
----
-
-little patch
