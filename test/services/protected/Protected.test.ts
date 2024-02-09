@@ -19,10 +19,10 @@ describe('test Protected', () => {
     nock.cleanAll();
   });
 
-  describe('test appControllerGetHello2', () => {
+  describe('test getHelloProtected', () => {
     test('test api call', () => {
       const scope = nock('https://api-dev.panora.dev').get('/protected').reply(200, { data: {} });
-      return sdk.protected.appControllerGetHello2().then((r: any) => expect(r.data).toEqual({}));
+      return sdk.protected.getHelloProtected().then((r: any) => expect(r.data).toEqual({}));
     });
   });
 });

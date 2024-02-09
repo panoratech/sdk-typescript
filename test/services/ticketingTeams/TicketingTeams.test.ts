@@ -25,7 +25,7 @@ describe('test TicketingTeams', () => {
         .get('/ticketing/teams?remote_data=true')
         .reply(200, { data: {} });
       return sdk.ticketingTeams
-        .getTeams('excepturi', { remoteData: true })
+        .getTeams('sed', { remoteData: true })
         .then((r: any) => expect(r.data).toEqual({}));
     });
 
@@ -41,7 +41,7 @@ describe('test TicketingTeams', () => {
         .get('/ticketing/teams?remote_data=true')
         .reply(404, { data: {} });
       return expect(
-        async () => await sdk.ticketingTeams.getTeams('ipsa', { remoteData: true }),
+        async () => await sdk.ticketingTeams.getTeams('deleniti', { remoteData: true }),
       ).rejects.toThrow();
     });
   });
@@ -49,26 +49,26 @@ describe('test TicketingTeams', () => {
   describe('test getTeam', () => {
     test('test api call', () => {
       const scope = nock('https://api-dev.panora.dev')
-        .get('/ticketing/teams/6824407600?remote_data=true')
+        .get('/ticketing/teams/2519002245?remote_data=true')
         .reply(200, { data: {} });
       return sdk.ticketingTeams
-        .getTeam('6824407600', { remoteData: true })
+        .getTeam('2519002245', { remoteData: true })
         .then((r: any) => expect(r.data).toEqual({}));
     });
 
     test('test will throw error if required fields missing', () => {
       const scope = nock('https://api-dev.panora.dev')
-        .get('/ticketing/teams/1510416690?remote_data=true')
+        .get('/ticketing/teams/5577171178?remote_data=true')
         .reply(200, { data: {} });
       return expect(async () => await sdk.ticketingTeams.getTeam()).rejects.toThrow();
     });
 
     test('test will throw error on a non-200 response', () => {
       const scope = nock('https://api-dev.panora.dev')
-        .get('/ticketing/teams/8284572100?remote_data=true')
+        .get('/ticketing/teams/9268075441?remote_data=true')
         .reply(404, { data: {} });
       return expect(
-        async () => await sdk.ticketingTeams.getTeam('8284572100', { remoteData: true }),
+        async () => await sdk.ticketingTeams.getTeam('9268075441', { remoteData: true }),
       ).rejects.toThrow();
     });
   });

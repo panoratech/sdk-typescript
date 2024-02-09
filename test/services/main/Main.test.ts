@@ -19,10 +19,10 @@ describe('test Main', () => {
     nock.cleanAll();
   });
 
-  describe('test appControllerGetHello', () => {
+  describe('test getHello', () => {
     test('test api call', () => {
       const scope = nock('https://api-dev.panora.dev').get('/').reply(200, { data: {} });
-      return sdk.main.appControllerGetHello().then((r: any) => expect(r.data).toEqual({}));
+      return sdk.main.getHello().then((r: any) => expect(r.data).toEqual({}));
     });
   });
 });

@@ -25,7 +25,7 @@ describe('test TicketingContacts', () => {
         .get('/ticketing/contacts?remote_data=true')
         .reply(200, { data: {} });
       return sdk.ticketingContacts
-        .getContacts('provident', { remoteData: true })
+        .getContacts('ab', { remoteData: true })
         .then((r: any) => expect(r.data).toEqual({}));
     });
 
@@ -41,7 +41,7 @@ describe('test TicketingContacts', () => {
         .get('/ticketing/contacts?remote_data=true')
         .reply(404, { data: {} });
       return expect(
-        async () => await sdk.ticketingContacts.getContacts('neque', { remoteData: true }),
+        async () => await sdk.ticketingContacts.getContacts('autem', { remoteData: true }),
       ).rejects.toThrow();
     });
   });
@@ -49,26 +49,26 @@ describe('test TicketingContacts', () => {
   describe('test getContact', () => {
     test('test api call', () => {
       const scope = nock('https://api-dev.panora.dev')
-        .get('/ticketing/contacts/8261628922?remote_data=true')
+        .get('/ticketing/contacts/4979751391?remote_data=true')
         .reply(200, { data: {} });
       return sdk.ticketingContacts
-        .getContact('8261628922', { remoteData: true })
+        .getContact('4979751391', { remoteData: true })
         .then((r: any) => expect(r.data).toEqual({}));
     });
 
     test('test will throw error if required fields missing', () => {
       const scope = nock('https://api-dev.panora.dev')
-        .get('/ticketing/contacts/9632655739?remote_data=true')
+        .get('/ticketing/contacts/3082244409?remote_data=true')
         .reply(200, { data: {} });
       return expect(async () => await sdk.ticketingContacts.getContact()).rejects.toThrow();
     });
 
     test('test will throw error on a non-200 response', () => {
       const scope = nock('https://api-dev.panora.dev')
-        .get('/ticketing/contacts/6092419173?remote_data=true')
+        .get('/ticketing/contacts/9488233715?remote_data=true')
         .reply(404, { data: {} });
       return expect(
-        async () => await sdk.ticketingContacts.getContact('6092419173', { remoteData: true }),
+        async () => await sdk.ticketingContacts.getContact('9488233715', { remoteData: true }),
       ).rejects.toThrow();
     });
   });
