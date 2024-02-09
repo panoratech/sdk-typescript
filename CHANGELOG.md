@@ -1,5 +1,11 @@
 # @panora/sdk-typescript
 
+## 1.2.0
+
+### Minor Changes
+
+- 6443229: readme
+
 ## 1.1.0
 
 ### Minor Changes
