@@ -44,7 +44,9 @@
     "test": "jest --detectOpenHandles",
     "watch": "rm -rf dist/ && tsc -w",
     "version": "tsc --version",
-    "prepublishOnly": "npm run build"
+    "prepublishOnly": "npm run build",
+    "release": "changeset publish",
+    "cversion": "changeset version"
   },
   "name": "panorasdk",
   "description": "PanoraSDK - The Panora API description",
