@@ -15,25 +15,25 @@ export class TicketingTicketsService extends BaseService {
   /**
    * @summary List a batch of Tickets
 
-   * @param connectionToken The connection token
+   * @param xConnectionToken The connection token
    * @param optionalParams - Optional parameters
    * @param optionalParams.remoteData - Set to true to include data from the original Ticketing software.
    * @returns {Promise<GetTicketsResponse>} - The promise with the result
    */
   async getTickets(
-    connectionToken: string,
+    xConnectionToken: string,
     optionalParams: { remoteData?: boolean } = {},
   ): Promise<GetTicketsResponse> {
     const { remoteData } = optionalParams;
-    if (connectionToken === undefined) {
+    if (xConnectionToken === undefined) {
       throw new Error(
-        'The following parameter is required: connectionToken, cannot be empty or blank',
+        'The following parameter is required: xConnectionToken, cannot be empty or blank',
       );
     }
     const queryParams: string[] = [];
     const headers: { [key: string]: string } = {};
-    if (connectionToken !== undefined) {
-      headers['connection_token'] = serializeHeader(false, connectionToken);
+    if (xConnectionToken !== undefined) {
+      headers['x-connection-token'] = serializeHeader(false, xConnectionToken);
     }
     if (remoteData) {
       queryParams.push(serializeQuery('form', true, 'remote_data', remoteData));
@@ -58,26 +58,26 @@ export class TicketingTicketsService extends BaseService {
    * @summary Create a Ticket
    * @description Create a ticket in any supported Ticketing software
 
-   * @param connectionToken The connection token
+   * @param xConnectionToken The connection token
    * @param optionalParams - Optional parameters
    * @param optionalParams.remoteData - Set to true to include data from the original Ticketing software.
    * @returns {Promise<AddTicketResponse|UnifiedTicketOutput>} - The promise with the result
    */
   async addTicket(
     input: UnifiedTicketInput,
-    connectionToken: string,
+    xConnectionToken: string,
     optionalParams: { remoteData?: boolean } = {},
   ): Promise<AddTicketResponse | UnifiedTicketOutput> {
     const { remoteData } = optionalParams;
-    if (connectionToken === undefined) {
+    if (xConnectionToken === undefined) {
       throw new Error(
-        'The following parameter is required: connectionToken, cannot be empty or blank',
+        'The following parameter is required: xConnectionToken, cannot be empty or blank',
       );
     }
     const queryParams: string[] = [];
     const headers: { [key: string]: string } = { 'Content-type': 'application/json' };
-    if (connectionToken !== undefined) {
-      headers['connection_token'] = serializeHeader(false, connectionToken);
+    if (xConnectionToken !== undefined) {
+      headers['x-connection-token'] = serializeHeader(false, xConnectionToken);
     }
     if (remoteData) {
       queryParams.push(serializeQuery('form', true, 'remote_data', remoteData));
@@ -166,26 +166,26 @@ export class TicketingTicketsService extends BaseService {
   /**
    * @summary Add a batch of Tickets
 
-   * @param connectionToken The connection token
+   * @param xConnectionToken The connection token
    * @param optionalParams - Optional parameters
    * @param optionalParams.remoteData - Set to true to include data from the original Ticketing software.
    * @returns {Promise<AddTicketsResponse|TicketingTicketsAddTicketsResponse>} - The promise with the result
    */
   async addTickets(
     input: AddTicketsRequest,
-    connectionToken: string,
+    xConnectionToken: string,
     optionalParams: { remoteData?: boolean } = {},
   ): Promise<AddTicketsResponse | TicketingTicketsAddTicketsResponse> {
     const { remoteData } = optionalParams;
-    if (connectionToken === undefined) {
+    if (xConnectionToken === undefined) {
       throw new Error(
-        'The following parameter is required: connectionToken, cannot be empty or blank',
+        'The following parameter is required: xConnectionToken, cannot be empty or blank',
       );
     }
     const queryParams: string[] = [];
     const headers: { [key: string]: string } = { 'Content-type': 'application/json' };
-    if (connectionToken !== undefined) {
-      headers['connection_token'] = serializeHeader(false, connectionToken);
+    if (xConnectionToken !== undefined) {
+      headers['x-connection-token'] = serializeHeader(false, xConnectionToken);
     }
     if (remoteData) {
       queryParams.push(serializeQuery('form', true, 'remote_data', remoteData));

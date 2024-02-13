@@ -16,25 +16,25 @@ export class TicketingAttachmentsService extends BaseService {
   /**
    * @summary List a batch of Attachments
 
-   * @param connectionToken The connection token
+   * @param xConnectionToken The connection token
    * @param optionalParams - Optional parameters
    * @param optionalParams.remoteData - Set to true to include data from the original Ticketing software.
    * @returns {Promise<GetAttachmentsResponse>} - The promise with the result
    */
   async getAttachments(
-    connectionToken: string,
+    xConnectionToken: string,
     optionalParams: { remoteData?: boolean } = {},
   ): Promise<GetAttachmentsResponse> {
     const { remoteData } = optionalParams;
-    if (connectionToken === undefined) {
+    if (xConnectionToken === undefined) {
       throw new Error(
-        'The following parameter is required: connectionToken, cannot be empty or blank',
+        'The following parameter is required: xConnectionToken, cannot be empty or blank',
       );
     }
     const queryParams: string[] = [];
     const headers: { [key: string]: string } = {};
-    if (connectionToken !== undefined) {
-      headers['connection_token'] = serializeHeader(false, connectionToken);
+    if (xConnectionToken !== undefined) {
+      headers['x-connection-token'] = serializeHeader(false, xConnectionToken);
     }
     if (remoteData) {
       queryParams.push(serializeQuery('form', true, 'remote_data', remoteData));
@@ -59,26 +59,26 @@ export class TicketingAttachmentsService extends BaseService {
    * @summary Create a Attachment
    * @description Create a attachment in any supported Ticketing software
 
-   * @param connectionToken The connection token
+   * @param xConnectionToken The connection token
    * @param optionalParams - Optional parameters
    * @param optionalParams.remoteData - Set to true to include data from the original Ticketing software.
    * @returns {Promise<AddAttachmentResponse|UnifiedAttachmentOutput>} - The promise with the result
    */
   async addAttachment(
     input: UnifiedAttachmentInput,
-    connectionToken: string,
+    xConnectionToken: string,
     optionalParams: { remoteData?: boolean } = {},
   ): Promise<AddAttachmentResponse | UnifiedAttachmentOutput> {
     const { remoteData } = optionalParams;
-    if (connectionToken === undefined) {
+    if (xConnectionToken === undefined) {
       throw new Error(
-        'The following parameter is required: connectionToken, cannot be empty or blank',
+        'The following parameter is required: xConnectionToken, cannot be empty or blank',
       );
     }
     const queryParams: string[] = [];
     const headers: { [key: string]: string } = { 'Content-type': 'application/json' };
-    if (connectionToken !== undefined) {
-      headers['connection_token'] = serializeHeader(false, connectionToken);
+    if (xConnectionToken !== undefined) {
+      headers['x-connection-token'] = serializeHeader(false, xConnectionToken);
     }
     if (remoteData) {
       queryParams.push(serializeQuery('form', true, 'remote_data', remoteData));
@@ -176,26 +176,26 @@ export class TicketingAttachmentsService extends BaseService {
   /**
    * @summary Add a batch of Attachments
 
-   * @param connectionToken The connection token
+   * @param xConnectionToken The connection token
    * @param optionalParams - Optional parameters
    * @param optionalParams.remoteData - Set to true to include data from the original Ticketing software.
    * @returns {Promise<AddAttachmentsResponse|TicketingAttachmentsAddAttachmentsResponse>} - The promise with the result
    */
   async addAttachments(
     input: AddAttachmentsRequest,
-    connectionToken: string,
+    xConnectionToken: string,
     optionalParams: { remoteData?: boolean } = {},
   ): Promise<AddAttachmentsResponse | TicketingAttachmentsAddAttachmentsResponse> {
     const { remoteData } = optionalParams;
-    if (connectionToken === undefined) {
+    if (xConnectionToken === undefined) {
       throw new Error(
-        'The following parameter is required: connectionToken, cannot be empty or blank',
+        'The following parameter is required: xConnectionToken, cannot be empty or blank',
       );
     }
     const queryParams: string[] = [];
     const headers: { [key: string]: string } = { 'Content-type': 'application/json' };
-    if (connectionToken !== undefined) {
-      headers['connection_token'] = serializeHeader(false, connectionToken);
+    if (xConnectionToken !== undefined) {
+      headers['x-connection-token'] = serializeHeader(false, xConnectionToken);
     }
     if (remoteData) {
       queryParams.push(serializeQuery('form', true, 'remote_data', remoteData));

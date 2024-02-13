@@ -15,25 +15,25 @@ export class CrmNotesService extends BaseService {
   /**
    * @summary List a batch of Notes
 
-   * @param connectionToken The connection token
+   * @param xConnectionToken The connection token
    * @param optionalParams - Optional parameters
    * @param optionalParams.remoteData - Set to true to include data from the original Crm software.
    * @returns {Promise<GetNotesResponse>} - The promise with the result
    */
   async getNotes(
-    connectionToken: string,
+    xConnectionToken: string,
     optionalParams: { remoteData?: boolean } = {},
   ): Promise<GetNotesResponse> {
     const { remoteData } = optionalParams;
-    if (connectionToken === undefined) {
+    if (xConnectionToken === undefined) {
       throw new Error(
-        'The following parameter is required: connectionToken, cannot be empty or blank',
+        'The following parameter is required: xConnectionToken, cannot be empty or blank',
       );
     }
     const queryParams: string[] = [];
     const headers: { [key: string]: string } = {};
-    if (connectionToken !== undefined) {
-      headers['connection_token'] = serializeHeader(false, connectionToken);
+    if (xConnectionToken !== undefined) {
+      headers['x-connection-token'] = serializeHeader(false, xConnectionToken);
     }
     if (remoteData) {
       queryParams.push(serializeQuery('form', true, 'remote_data', remoteData));
@@ -58,26 +58,26 @@ export class CrmNotesService extends BaseService {
    * @summary Create a Note
    * @description Create a note in any supported Crm software
 
-   * @param connectionToken The connection token
+   * @param xConnectionToken The connection token
    * @param optionalParams - Optional parameters
    * @param optionalParams.remoteData - Set to true to include data from the original Crm software.
    * @returns {Promise<AddNoteResponse|UnifiedNoteOutput>} - The promise with the result
    */
   async addNote(
     input: UnifiedNoteInput,
-    connectionToken: string,
+    xConnectionToken: string,
     optionalParams: { remoteData?: boolean } = {},
   ): Promise<AddNoteResponse | UnifiedNoteOutput> {
     const { remoteData } = optionalParams;
-    if (connectionToken === undefined) {
+    if (xConnectionToken === undefined) {
       throw new Error(
-        'The following parameter is required: connectionToken, cannot be empty or blank',
+        'The following parameter is required: xConnectionToken, cannot be empty or blank',
       );
     }
     const queryParams: string[] = [];
     const headers: { [key: string]: string } = { 'Content-type': 'application/json' };
-    if (connectionToken !== undefined) {
-      headers['connection_token'] = serializeHeader(false, connectionToken);
+    if (xConnectionToken !== undefined) {
+      headers['x-connection-token'] = serializeHeader(false, xConnectionToken);
     }
     if (remoteData) {
       queryParams.push(serializeQuery('form', true, 'remote_data', remoteData));
@@ -138,26 +138,26 @@ export class CrmNotesService extends BaseService {
   /**
    * @summary Add a batch of Notes
 
-   * @param connectionToken The connection token
+   * @param xConnectionToken The connection token
    * @param optionalParams - Optional parameters
    * @param optionalParams.remoteData - Set to true to include data from the original Crm software.
    * @returns {Promise<AddNotesResponse|CrmNotesAddNotesResponse>} - The promise with the result
    */
   async addNotes(
     input: AddNotesRequest,
-    connectionToken: string,
+    xConnectionToken: string,
     optionalParams: { remoteData?: boolean } = {},
   ): Promise<AddNotesResponse | CrmNotesAddNotesResponse> {
     const { remoteData } = optionalParams;
-    if (connectionToken === undefined) {
+    if (xConnectionToken === undefined) {
       throw new Error(
-        'The following parameter is required: connectionToken, cannot be empty or blank',
+        'The following parameter is required: xConnectionToken, cannot be empty or blank',
       );
     }
     const queryParams: string[] = [];
     const headers: { [key: string]: string } = { 'Content-type': 'application/json' };
-    if (connectionToken !== undefined) {
-      headers['connection_token'] = serializeHeader(false, connectionToken);
+    if (xConnectionToken !== undefined) {
+      headers['x-connection-token'] = serializeHeader(false, xConnectionToken);
     }
     if (remoteData) {
       queryParams.push(serializeQuery('form', true, 'remote_data', remoteData));
