@@ -25,7 +25,7 @@ describe('test TicketingTickets', () => {
         .get('/ticketing/tickets?remote_data=true')
         .reply(200, { data: {} });
       return sdk.ticketingTickets
-        .getTickets('corrupti', { remoteData: true })
+        .getTickets('a', { remoteData: true })
         .then((r: any) => expect(r.data).toEqual({}));
     });
 
@@ -41,7 +41,7 @@ describe('test TicketingTickets', () => {
         .get('/ticketing/tickets?remote_data=true')
         .reply(404, { data: {} });
       return expect(
-        async () => await sdk.ticketingTickets.getTickets('molestias', { remoteData: true }),
+        async () => await sdk.ticketingTickets.getTickets('fugit', { remoteData: true }),
       ).rejects.toThrow();
     });
   });
@@ -52,7 +52,7 @@ describe('test TicketingTickets', () => {
         .post('/ticketing/tickets?remote_data=true')
         .reply(200, { data: {} });
       return sdk.ticketingTickets
-        .addTicket({}, 'labore', { remoteData: true })
+        .addTicket({}, 'ipsa', { remoteData: true })
         .then((r: any) => expect(r.data).toEqual({}));
     });
 
@@ -68,7 +68,7 @@ describe('test TicketingTickets', () => {
         .post('/ticketing/tickets?remote_data=true')
         .reply(404, { data: {} });
       return expect(
-        async () => await sdk.ticketingTickets.addTicket({}, 'illum', { remoteData: true }),
+        async () => await sdk.ticketingTickets.addTicket({}, 'praesentium', { remoteData: true }),
       ).rejects.toThrow();
     });
   });
@@ -76,26 +76,26 @@ describe('test TicketingTickets', () => {
   describe('test updateTicket', () => {
     test('test api call', () => {
       const scope = nock('https://api-dev.panora.dev')
-        .patch('/ticketing/tickets?id=8814056601')
+        .patch('/ticketing/tickets?id=3023233767')
         .reply(200, { data: {} });
       return sdk.ticketingTickets
-        .updateTicket('8814056601')
+        .updateTicket('3023233767')
         .then((r: any) => expect(r.data).toEqual({}));
     });
 
     test('test will throw error if required fields missing', () => {
       const scope = nock('https://api-dev.panora.dev')
-        .patch('/ticketing/tickets?id=2437166568')
+        .patch('/ticketing/tickets?id=7086471151')
         .reply(200, { data: {} });
       return expect(async () => await sdk.ticketingTickets.updateTicket()).rejects.toThrow();
     });
 
     test('test will throw error on a non-200 response', () => {
       const scope = nock('https://api-dev.panora.dev')
-        .patch('/ticketing/tickets?id=4039150539')
+        .patch('/ticketing/tickets?id=8454534669')
         .reply(404, { data: {} });
       return expect(
-        async () => await sdk.ticketingTickets.updateTicket('4039150539'),
+        async () => await sdk.ticketingTickets.updateTicket('8454534669'),
       ).rejects.toThrow();
     });
   });
@@ -103,26 +103,26 @@ describe('test TicketingTickets', () => {
   describe('test getTicket', () => {
     test('test api call', () => {
       const scope = nock('https://api-dev.panora.dev')
-        .get('/ticketing/tickets/7132724783?remote_data=true')
+        .get('/ticketing/tickets/1966035845?remote_data=true')
         .reply(200, { data: {} });
       return sdk.ticketingTickets
-        .getTicket('7132724783', { remoteData: true })
+        .getTicket('1966035845', { remoteData: true })
         .then((r: any) => expect(r.data).toEqual({}));
     });
 
     test('test will throw error if required fields missing', () => {
       const scope = nock('https://api-dev.panora.dev')
-        .get('/ticketing/tickets/5779590750?remote_data=true')
+        .get('/ticketing/tickets/2218138998?remote_data=true')
         .reply(200, { data: {} });
       return expect(async () => await sdk.ticketingTickets.getTicket()).rejects.toThrow();
     });
 
     test('test will throw error on a non-200 response', () => {
       const scope = nock('https://api-dev.panora.dev')
-        .get('/ticketing/tickets/6005225330?remote_data=true')
+        .get('/ticketing/tickets/9274957317?remote_data=true')
         .reply(404, { data: {} });
       return expect(
-        async () => await sdk.ticketingTickets.getTicket('6005225330', { remoteData: true }),
+        async () => await sdk.ticketingTickets.getTicket('9274957317', { remoteData: true }),
       ).rejects.toThrow();
     });
   });
@@ -133,7 +133,7 @@ describe('test TicketingTickets', () => {
         .post('/ticketing/tickets/batch?remote_data=true')
         .reply(200, { data: {} });
       return sdk.ticketingTickets
-        .addTickets({}, 'eligendi', { remoteData: true })
+        .addTickets({}, 'repellat', { remoteData: true })
         .then((r: any) => expect(r.data).toEqual({}));
     });
 
@@ -149,7 +149,7 @@ describe('test TicketingTickets', () => {
         .post('/ticketing/tickets/batch?remote_data=true')
         .reply(404, { data: {} });
       return expect(
-        async () => await sdk.ticketingTickets.addTickets({}, 'laboriosam', { remoteData: true }),
+        async () => await sdk.ticketingTickets.addTickets({}, 'autem', { remoteData: true }),
       ).rejects.toThrow();
     });
   });
