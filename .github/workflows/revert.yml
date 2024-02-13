@@ -12,7 +12,6 @@ on:
 
 jobs:
   adjust-pr-files:
-    if: startsWith(github.head_ref, 'liblab')
     runs-on: ubuntu-latest
     steps:
       - name: Checkout PR branch
