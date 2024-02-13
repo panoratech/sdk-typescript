@@ -15,25 +15,25 @@ export class TicketingCommentsService extends BaseService {
   /**
    * @summary List a batch of Comments
 
-   * @param connectionToken The connection token
+   * @param xConnectionToken The connection token
    * @param optionalParams - Optional parameters
    * @param optionalParams.remoteData - Set to true to include data from the original Ticketing software.
    * @returns {Promise<GetCommentsResponse>} - The promise with the result
    */
   async getComments(
-    connectionToken: string,
+    xConnectionToken: string,
     optionalParams: { remoteData?: boolean } = {},
   ): Promise<GetCommentsResponse> {
     const { remoteData } = optionalParams;
-    if (connectionToken === undefined) {
+    if (xConnectionToken === undefined) {
       throw new Error(
-        'The following parameter is required: connectionToken, cannot be empty or blank',
+        'The following parameter is required: xConnectionToken, cannot be empty or blank',
       );
     }
     const queryParams: string[] = [];
     const headers: { [key: string]: string } = {};
-    if (connectionToken !== undefined) {
-      headers['connection_token'] = serializeHeader(false, connectionToken);
+    if (xConnectionToken !== undefined) {
+      headers['x-connection-token'] = serializeHeader(false, xConnectionToken);
     }
     if (remoteData) {
       queryParams.push(serializeQuery('form', true, 'remote_data', remoteData));
@@ -58,26 +58,26 @@ export class TicketingCommentsService extends BaseService {
    * @summary Create a Comment
    * @description Create a comment in any supported Ticketing software
 
-   * @param connectionToken The connection token
+   * @param xConnectionToken The connection token
    * @param optionalParams - Optional parameters
    * @param optionalParams.remoteData - Set to true to include data from the original Ticketing software.
    * @returns {Promise<AddCommentResponse|UnifiedCommentOutput>} - The promise with the result
    */
   async addComment(
     input: UnifiedCommentInput,
-    connectionToken: string,
+    xConnectionToken: string,
     optionalParams: { remoteData?: boolean } = {},
   ): Promise<AddCommentResponse | UnifiedCommentOutput> {
     const { remoteData } = optionalParams;
-    if (connectionToken === undefined) {
+    if (xConnectionToken === undefined) {
       throw new Error(
-        'The following parameter is required: connectionToken, cannot be empty or blank',
+        'The following parameter is required: xConnectionToken, cannot be empty or blank',
       );
     }
     const queryParams: string[] = [];
     const headers: { [key: string]: string } = { 'Content-type': 'application/json' };
-    if (connectionToken !== undefined) {
-      headers['connection_token'] = serializeHeader(false, connectionToken);
+    if (xConnectionToken !== undefined) {
+      headers['x-connection-token'] = serializeHeader(false, xConnectionToken);
     }
     if (remoteData) {
       queryParams.push(serializeQuery('form', true, 'remote_data', remoteData));
@@ -138,26 +138,26 @@ export class TicketingCommentsService extends BaseService {
   /**
    * @summary Add a batch of Comments
 
-   * @param connectionToken The connection token
+   * @param xConnectionToken The connection token
    * @param optionalParams - Optional parameters
    * @param optionalParams.remoteData - Set to true to include data from the original Ticketing software.
    * @returns {Promise<AddCommentsResponse|TicketingCommentsAddCommentsResponse>} - The promise with the result
    */
   async addComments(
     input: AddCommentsRequest,
-    connectionToken: string,
+    xConnectionToken: string,
     optionalParams: { remoteData?: boolean } = {},
   ): Promise<AddCommentsResponse | TicketingCommentsAddCommentsResponse> {
     const { remoteData } = optionalParams;
-    if (connectionToken === undefined) {
+    if (xConnectionToken === undefined) {
       throw new Error(
-        'The following parameter is required: connectionToken, cannot be empty or blank',
+        'The following parameter is required: xConnectionToken, cannot be empty or blank',
       );
     }
     const queryParams: string[] = [];
     const headers: { [key: string]: string } = { 'Content-type': 'application/json' };
-    if (connectionToken !== undefined) {
-      headers['connection_token'] = serializeHeader(false, connectionToken);
+    if (xConnectionToken !== undefined) {
+      headers['x-connection-token'] = serializeHeader(false, xConnectionToken);
     }
     if (remoteData) {
       queryParams.push(serializeQuery('form', true, 'remote_data', remoteData));

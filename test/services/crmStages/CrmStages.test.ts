@@ -25,7 +25,7 @@ describe('test CrmStages', () => {
         .get('/crm/stages?remote_data=true')
         .reply(200, { data: {} });
       return sdk.crmStages
-        .getStages('iure', { remoteData: true })
+        .getStages('tempore', { remoteData: true })
         .then((r: any) => expect(r.data).toEqual({}));
     });
 
@@ -41,7 +41,7 @@ describe('test CrmStages', () => {
         .get('/crm/stages?remote_data=true')
         .reply(404, { data: {} });
       return expect(
-        async () => await sdk.crmStages.getStages('modi', { remoteData: true }),
+        async () => await sdk.crmStages.getStages('adipisci', { remoteData: true }),
       ).rejects.toThrow();
     });
   });
@@ -49,26 +49,26 @@ describe('test CrmStages', () => {
   describe('test getStage', () => {
     test('test api call', () => {
       const scope = nock('https://api-dev.panora.dev')
-        .get('/crm/stages/7451049417?remote_data=true')
+        .get('/crm/stages/4427481153?remote_data=true')
         .reply(200, { data: {} });
       return sdk.crmStages
-        .getStage('7451049417', { remoteData: true })
+        .getStage('4427481153', { remoteData: true })
         .then((r: any) => expect(r.data).toEqual({}));
     });
 
     test('test will throw error if required fields missing', () => {
       const scope = nock('https://api-dev.panora.dev')
-        .get('/crm/stages/6718372328?remote_data=true')
+        .get('/crm/stages/1726562478?remote_data=true')
         .reply(200, { data: {} });
       return expect(async () => await sdk.crmStages.getStage()).rejects.toThrow();
     });
 
     test('test will throw error on a non-200 response', () => {
       const scope = nock('https://api-dev.panora.dev')
-        .get('/crm/stages/8075732278?remote_data=true')
+        .get('/crm/stages/3082212692?remote_data=true')
         .reply(404, { data: {} });
       return expect(
-        async () => await sdk.crmStages.getStage('8075732278', { remoteData: true }),
+        async () => await sdk.crmStages.getStage('3082212692', { remoteData: true }),
       ).rejects.toThrow();
     });
   });
