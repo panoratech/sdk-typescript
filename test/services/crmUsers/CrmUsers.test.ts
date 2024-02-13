@@ -25,7 +25,7 @@ describe('test CrmUsers', () => {
         .get('/crm/users?remote_data=true')
         .reply(200, { data: {} });
       return sdk.crmUsers
-        .getUsers('dolores', { remoteData: true })
+        .getUsers('corporis', { remoteData: true })
         .then((r: any) => expect(r.data).toEqual({}));
     });
 
@@ -41,7 +41,7 @@ describe('test CrmUsers', () => {
         .get('/crm/users?remote_data=true')
         .reply(404, { data: {} });
       return expect(
-        async () => await sdk.crmUsers.getUsers('quod', { remoteData: true }),
+        async () => await sdk.crmUsers.getUsers('perferendis', { remoteData: true }),
       ).rejects.toThrow();
     });
   });
@@ -49,26 +49,26 @@ describe('test CrmUsers', () => {
   describe('test getUser', () => {
     test('test api call', () => {
       const scope = nock('https://api-dev.panora.dev')
-        .get('/crm/users/2499044967?remote_data=true')
+        .get('/crm/users/9591247261?remote_data=true')
         .reply(200, { data: {} });
       return sdk.crmUsers
-        .getUser('2499044967', { remoteData: true })
+        .getUser('9591247261', { remoteData: true })
         .then((r: any) => expect(r.data).toEqual({}));
     });
 
     test('test will throw error if required fields missing', () => {
       const scope = nock('https://api-dev.panora.dev')
-        .get('/crm/users/1166461585?remote_data=true')
+        .get('/crm/users/4816181911?remote_data=true')
         .reply(200, { data: {} });
       return expect(async () => await sdk.crmUsers.getUser()).rejects.toThrow();
     });
 
     test('test will throw error on a non-200 response', () => {
       const scope = nock('https://api-dev.panora.dev')
-        .get('/crm/users/2050359123?remote_data=true')
+        .get('/crm/users/4779026514?remote_data=true')
         .reply(404, { data: {} });
       return expect(
-        async () => await sdk.crmUsers.getUser('2050359123', { remoteData: true }),
+        async () => await sdk.crmUsers.getUser('4779026514', { remoteData: true }),
       ).rejects.toThrow();
     });
   });

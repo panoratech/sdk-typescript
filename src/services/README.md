@@ -189,7 +189,7 @@ A list of all services and services methods.
 | [addDeal](#adddeal) | Create a Deal |
 | [getDeals](#getdeals) | List a batch of Deals |
 | [getDeal](#getdeal) | Retrieve a Deal |
-| [updateDeal](#updatedeal) | Update a Deal |
+| [updateDeal](#updatedeal) | Update a deal |
 | [addDeals](#adddeals) | Add a batch of Deals |
 
 
@@ -343,7 +343,7 @@ Returns a dict object.
 
 **Example Usage Code Snippet**
 ```Typescript
-import { PanoraSDK } from '@panora/sdk-typescript';
+import { PanoraSDK } from 'panorasdk';
 
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
@@ -369,7 +369,7 @@ Returns a dict object.
 
 **Example Usage Code Snippet**
 ```Typescript
-import { PanoraSDK } from '@panora/sdk-typescript';
+import { PanoraSDK } from 'panorasdk';
 
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
@@ -395,7 +395,7 @@ Returns a dict object.
 
 **Example Usage Code Snippet**
 ```Typescript
-import { PanoraSDK } from '@panora/sdk-typescript';
+import { PanoraSDK } from 'panorasdk';
 
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
@@ -424,7 +424,7 @@ Returns a dict object.
 
 **Example Usage Code Snippet**
 ```Typescript
-import { PanoraSDK } from '@panora/sdk-typescript';
+import { PanoraSDK } from 'panorasdk';
 
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
@@ -459,7 +459,7 @@ Returns a dict object.
 
 **Example Usage Code Snippet**
 ```Typescript
-import { PanoraSDK } from '@panora/sdk-typescript';
+import { PanoraSDK } from 'panorasdk';
 
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
@@ -485,7 +485,7 @@ Returns a dict object.
 
 **Example Usage Code Snippet**
 ```Typescript
-import { PanoraSDK } from '@panora/sdk-typescript';
+import { PanoraSDK } from 'panorasdk';
 
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
@@ -510,7 +510,7 @@ Returns a dict object.
 
 **Example Usage Code Snippet**
 ```Typescript
-import { PanoraSDK } from '@panora/sdk-typescript';
+import { PanoraSDK } from 'panorasdk';
 
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
@@ -538,7 +538,7 @@ Returns a dict object.
 
 **Example Usage Code Snippet**
 ```Typescript
-import { PanoraSDK } from '@panora/sdk-typescript';
+import { PanoraSDK } from 'panorasdk';
 
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
@@ -572,7 +572,7 @@ Returns a dict object.
 
 **Example Usage Code Snippet**
 ```Typescript
-import { PanoraSDK } from '@panora/sdk-typescript';
+import { PanoraSDK } from 'panorasdk';
 
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
@@ -597,7 +597,7 @@ Returns a dict object.
 
 **Example Usage Code Snippet**
 ```Typescript
-import { PanoraSDK } from '@panora/sdk-typescript';
+import { PanoraSDK } from 'panorasdk';
 
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
@@ -626,7 +626,7 @@ Returns a dict object.
 
 **Example Usage Code Snippet**
 ```Typescript
-import { PanoraSDK } from '@panora/sdk-typescript';
+import { PanoraSDK } from 'panorasdk';
 
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
@@ -634,7 +634,7 @@ const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
   const input = {
     description: 'description',
     id_project: 'id_project',
-    scope: ['sit cupidatat ut', 'magna reprehenderit'],
+    scope: ['eiusmod pariatur consectetur', 'ut labore in'],
     url: 'url',
   };
   const result = await sdk.webhook.createWebhookMetadata(input);
@@ -657,7 +657,7 @@ Returns a dict object.
 
 **Example Usage Code Snippet**
 ```Typescript
-import { PanoraSDK } from '@panora/sdk-typescript';
+import { PanoraSDK } from 'panorasdk';
 
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
@@ -687,7 +687,7 @@ Returns a dict object.
 
 **Example Usage Code Snippet**
 ```Typescript
-import { PanoraSDK } from '@panora/sdk-typescript';
+import { PanoraSDK } from 'panorasdk';
 
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
@@ -716,7 +716,7 @@ Returns a dict object.
 
 **Example Usage Code Snippet**
 ```Typescript
-import { PanoraSDK } from '@panora/sdk-typescript';
+import { PanoraSDK } from 'panorasdk';
 
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
@@ -746,7 +746,7 @@ Returns a dict object.
 
 **Example Usage Code Snippet**
 ```Typescript
-import { PanoraSDK } from '@panora/sdk-typescript';
+import { PanoraSDK } from 'panorasdk';
 
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
@@ -776,7 +776,7 @@ Returns a dict object.
 
 **Example Usage Code Snippet**
 ```Typescript
-import { PanoraSDK } from '@panora/sdk-typescript';
+import { PanoraSDK } from 'panorasdk';
 
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
@@ -802,7 +802,7 @@ Returns a dict object.
 
 **Example Usage Code Snippet**
 ```Typescript
-import { PanoraSDK } from '@panora/sdk-typescript';
+import { PanoraSDK } from 'panorasdk';
 
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
@@ -830,7 +830,7 @@ Returns a dict object.
 
 **Example Usage Code Snippet**
 ```Typescript
-import { PanoraSDK } from '@panora/sdk-typescript';
+import { PanoraSDK } from 'panorasdk';
 
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
@@ -857,7 +857,7 @@ Returns a dict object.
 
 **Example Usage Code Snippet**
 ```Typescript
-import { PanoraSDK } from '@panora/sdk-typescript';
+import { PanoraSDK } from 'panorasdk';
 
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
@@ -885,7 +885,7 @@ Returns a dict object.
 
 **Example Usage Code Snippet**
 ```Typescript
-import { PanoraSDK } from '@panora/sdk-typescript';
+import { PanoraSDK } from 'panorasdk';
 
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
@@ -912,7 +912,7 @@ Returns a dict object.
 
 **Example Usage Code Snippet**
 ```Typescript
-import { PanoraSDK } from '@panora/sdk-typescript';
+import { PanoraSDK } from 'panorasdk';
 
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
@@ -937,7 +937,7 @@ Returns a dict object.
 
 **Example Usage Code Snippet**
 ```Typescript
-import { PanoraSDK } from '@panora/sdk-typescript';
+import { PanoraSDK } from 'panorasdk';
 
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
@@ -962,7 +962,7 @@ Returns a dict object.
 
 **Example Usage Code Snippet**
 ```Typescript
-import { PanoraSDK } from '@panora/sdk-typescript';
+import { PanoraSDK } from 'panorasdk';
 
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
@@ -990,7 +990,7 @@ Returns a dict object.
 
 **Example Usage Code Snippet**
 ```Typescript
-import { PanoraSDK } from '@panora/sdk-typescript';
+import { PanoraSDK } from 'panorasdk';
 
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
@@ -1024,7 +1024,7 @@ Returns a dict object.
 
 **Example Usage Code Snippet**
 ```Typescript
-import { PanoraSDK } from '@panora/sdk-typescript';
+import { PanoraSDK } from 'panorasdk';
 
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
@@ -1061,7 +1061,7 @@ Returns a dict object.
 
 **Example Usage Code Snippet**
 ```Typescript
-import { PanoraSDK } from '@panora/sdk-typescript';
+import { PanoraSDK } from 'panorasdk';
 
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
@@ -1087,7 +1087,7 @@ Returns a dict object.
 
 **Example Usage Code Snippet**
 ```Typescript
-import { PanoraSDK } from '@panora/sdk-typescript';
+import { PanoraSDK } from 'panorasdk';
 
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
@@ -1116,7 +1116,7 @@ Returns a dict object.
 
 **Example Usage Code Snippet**
 ```Typescript
-import { PanoraSDK } from '@panora/sdk-typescript';
+import { PanoraSDK } from 'panorasdk';
 
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
@@ -1147,7 +1147,7 @@ Returns a dict object.
 
 **Example Usage Code Snippet**
 ```Typescript
-import { PanoraSDK } from '@panora/sdk-typescript';
+import { PanoraSDK } from 'panorasdk';
 
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
@@ -1177,7 +1177,7 @@ Returns a dict object.
 
 **Example Usage Code Snippet**
 ```Typescript
-import { PanoraSDK } from '@panora/sdk-typescript';
+import { PanoraSDK } from 'panorasdk';
 
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
@@ -1210,12 +1210,12 @@ PassThroughResponse
 
 **Example Usage Code Snippet**
 ```Typescript
-import { PanoraSDK } from '@panora/sdk-typescript';
+import { PanoraSDK } from 'panorasdk';
 
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
 (async () => {
-  const input = { data: {}, headers_: {}, method: 'PATCH', path: 'path' };
+  const input = { data: {}, headers_: {}, method: 'GET', path: 'path' };
   const result = await sdk.passthrough.passthroughRequest(input, 'integrationId', 'linkedUserId');
   console.log(result);
 })();
@@ -1232,7 +1232,7 @@ Create CRM Contact
 
 | Name    | Type| Description |
 | :-------- | :----------| :----------|
-| connectionToken | string | The connection token |
+| xConnectionToken | string | The connection token |
 | input | object | Request body. |
 
 **Optional Parameters**
@@ -1251,7 +1251,7 @@ UnifiedContactOutput
 
 **Example Usage Code Snippet**
 ```Typescript
-import { PanoraSDK } from '@panora/sdk-typescript';
+import { PanoraSDK } from 'panorasdk';
 
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
@@ -1265,7 +1265,9 @@ const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
     phone_numbers: [],
     user_id: 'user_id',
   };
-  const result = await sdk.crmContacts.addContact(input, 'connection_token', { remoteData: true });
+  const result = await sdk.crmContacts.addContact(input, 'x-connection-token', {
+    remoteData: true,
+  });
   console.log(result);
 })();
 
@@ -1280,7 +1282,7 @@ List a batch of CRM Contacts
 
 | Name    | Type| Description |
 | :-------- | :----------| :----------|
-| connectionToken | string | The connection token |
+| xConnectionToken | string | The connection token |
 
 **Optional Parameters**
 
@@ -1297,12 +1299,12 @@ GetContactsResponse
 
 **Example Usage Code Snippet**
 ```Typescript
-import { PanoraSDK } from '@panora/sdk-typescript';
+import { PanoraSDK } from 'panorasdk';
 
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
 (async () => {
-  const result = await sdk.crmContacts.getContacts('connection_token', { remoteData: true });
+  const result = await sdk.crmContacts.getContacts('x-connection-token', { remoteData: true });
   console.log(result);
 })();
 
@@ -1327,7 +1329,7 @@ UnifiedContactOutput
 
 **Example Usage Code Snippet**
 ```Typescript
-import { PanoraSDK } from '@panora/sdk-typescript';
+import { PanoraSDK } from 'panorasdk';
 
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
@@ -1364,7 +1366,7 @@ GetContactResponse
 
 **Example Usage Code Snippet**
 ```Typescript
-import { PanoraSDK } from '@panora/sdk-typescript';
+import { PanoraSDK } from 'panorasdk';
 
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
@@ -1384,7 +1386,7 @@ Add a batch of CRM Contacts
 
 | Name    | Type| Description |
 | :-------- | :----------| :----------|
-| connectionToken | string | The connection token |
+| xConnectionToken | string | The connection token |
 | input | object | Request body. |
 
 **Optional Parameters**
@@ -1403,13 +1405,15 @@ CrmContactsAddContactsResponse
 
 **Example Usage Code Snippet**
 ```Typescript
-import { PanoraSDK } from '@panora/sdk-typescript';
+import { PanoraSDK } from 'panorasdk';
 
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
 (async () => {
   const input = [{}, {}];
-  const result = await sdk.crmContacts.addContacts(input, 'connection_token', { remoteData: true });
+  const result = await sdk.crmContacts.addContacts(input, 'x-connection-token', {
+    remoteData: true,
+  });
   console.log(result);
 })();
 
@@ -1425,7 +1429,7 @@ Create a Deal
 
 | Name    | Type| Description |
 | :-------- | :----------| :----------|
-| connectionToken | string | The connection token |
+| xConnectionToken | string | The connection token |
 | input | object | Request body. |
 
 **Optional Parameters**
@@ -1444,13 +1448,13 @@ UnifiedDealOutput
 
 **Example Usage Code Snippet**
 ```Typescript
-import { PanoraSDK } from '@panora/sdk-typescript';
+import { PanoraSDK } from 'panorasdk';
 
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
 (async () => {
   const input = { field_mappings: {} };
-  const result = await sdk.crmDeals.addDeal(input, 'connection_token', { remoteData: true });
+  const result = await sdk.crmDeals.addDeal(input, 'x-connection-token', { remoteData: true });
   console.log(result);
 })();
 
@@ -1465,7 +1469,7 @@ List a batch of Deals
 
 | Name    | Type| Description |
 | :-------- | :----------| :----------|
-| connectionToken | string | The connection token |
+| xConnectionToken | string | The connection token |
 
 **Optional Parameters**
 
@@ -1482,12 +1486,12 @@ GetDealsResponse
 
 **Example Usage Code Snippet**
 ```Typescript
-import { PanoraSDK } from '@panora/sdk-typescript';
+import { PanoraSDK } from 'panorasdk';
 
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
 (async () => {
-  const result = await sdk.crmDeals.getDeals('connection_token', { remoteData: true });
+  const result = await sdk.crmDeals.getDeals('x-connection-token', { remoteData: true });
   console.log(result);
 })();
 
@@ -1519,7 +1523,7 @@ GetDealResponse
 
 **Example Usage Code Snippet**
 ```Typescript
-import { PanoraSDK } from '@panora/sdk-typescript';
+import { PanoraSDK } from 'panorasdk';
 
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
@@ -1531,7 +1535,7 @@ const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 ```
 
 ### **updateDeal**
-Update a Deal
+Update a deal
 - HTTP Method: PATCH
 - Endpoint: /crm/deals/{id}
 
@@ -1549,7 +1553,7 @@ UpdateDealResponse
 
 **Example Usage Code Snippet**
 ```Typescript
-import { PanoraSDK } from '@panora/sdk-typescript';
+import { PanoraSDK } from 'panorasdk';
 
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
@@ -1569,7 +1573,7 @@ Add a batch of Deals
 
 | Name    | Type| Description |
 | :-------- | :----------| :----------|
-| connectionToken | string | The connection token |
+| xConnectionToken | string | The connection token |
 | input | object | Request body. |
 
 **Optional Parameters**
@@ -1588,13 +1592,13 @@ CrmDealsAddDealsResponse
 
 **Example Usage Code Snippet**
 ```Typescript
-import { PanoraSDK } from '@panora/sdk-typescript';
+import { PanoraSDK } from 'panorasdk';
 
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
 (async () => {
   const input = [{}, {}];
-  const result = await sdk.crmDeals.addDeals(input, 'connection_token', { remoteData: true });
+  const result = await sdk.crmDeals.addDeals(input, 'x-connection-token', { remoteData: true });
   console.log(result);
 })();
 
@@ -1610,7 +1614,7 @@ Create a Note
 
 | Name    | Type| Description |
 | :-------- | :----------| :----------|
-| connectionToken | string | The connection token |
+| xConnectionToken | string | The connection token |
 | input | object | Request body. |
 
 **Optional Parameters**
@@ -1629,13 +1633,13 @@ UnifiedNoteOutput
 
 **Example Usage Code Snippet**
 ```Typescript
-import { PanoraSDK } from '@panora/sdk-typescript';
+import { PanoraSDK } from 'panorasdk';
 
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
 (async () => {
   const input = { field_mappings: {} };
-  const result = await sdk.crmNotes.addNote(input, 'connection_token', { remoteData: true });
+  const result = await sdk.crmNotes.addNote(input, 'x-connection-token', { remoteData: true });
   console.log(result);
 })();
 
@@ -1650,7 +1654,7 @@ List a batch of Notes
 
 | Name    | Type| Description |
 | :-------- | :----------| :----------|
-| connectionToken | string | The connection token |
+| xConnectionToken | string | The connection token |
 
 **Optional Parameters**
 
@@ -1667,12 +1671,12 @@ GetNotesResponse
 
 **Example Usage Code Snippet**
 ```Typescript
-import { PanoraSDK } from '@panora/sdk-typescript';
+import { PanoraSDK } from 'panorasdk';
 
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
 (async () => {
-  const result = await sdk.crmNotes.getNotes('connection_token', { remoteData: true });
+  const result = await sdk.crmNotes.getNotes('x-connection-token', { remoteData: true });
   console.log(result);
 })();
 
@@ -1704,7 +1708,7 @@ GetNoteResponse
 
 **Example Usage Code Snippet**
 ```Typescript
-import { PanoraSDK } from '@panora/sdk-typescript';
+import { PanoraSDK } from 'panorasdk';
 
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
@@ -1724,7 +1728,7 @@ Add a batch of Notes
 
 | Name    | Type| Description |
 | :-------- | :----------| :----------|
-| connectionToken | string | The connection token |
+| xConnectionToken | string | The connection token |
 | input | object | Request body. |
 
 **Optional Parameters**
@@ -1743,13 +1747,13 @@ CrmNotesAddNotesResponse
 
 **Example Usage Code Snippet**
 ```Typescript
-import { PanoraSDK } from '@panora/sdk-typescript';
+import { PanoraSDK } from 'panorasdk';
 
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
 (async () => {
   const input = [{}, {}];
-  const result = await sdk.crmNotes.addNotes(input, 'connection_token', { remoteData: true });
+  const result = await sdk.crmNotes.addNotes(input, 'x-connection-token', { remoteData: true });
   console.log(result);
 })();
 
@@ -1765,7 +1769,7 @@ Create a Company
 
 | Name    | Type| Description |
 | :-------- | :----------| :----------|
-| connectionToken | string | The connection token |
+| xConnectionToken | string | The connection token |
 | input | object | Request body. |
 
 **Optional Parameters**
@@ -1784,13 +1788,15 @@ UnifiedCompanyOutput
 
 **Example Usage Code Snippet**
 ```Typescript
-import { PanoraSDK } from '@panora/sdk-typescript';
+import { PanoraSDK } from 'panorasdk';
 
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
 (async () => {
   const input = { field_mappings: {} };
-  const result = await sdk.crmCompanies.addCompany(input, 'connection_token', { remoteData: true });
+  const result = await sdk.crmCompanies.addCompany(input, 'x-connection-token', {
+    remoteData: true,
+  });
   console.log(result);
 })();
 
@@ -1805,7 +1811,7 @@ List a batch of Companies
 
 | Name    | Type| Description |
 | :-------- | :----------| :----------|
-| connectionToken | string | The connection token |
+| xConnectionToken | string | The connection token |
 
 **Optional Parameters**
 
@@ -1822,12 +1828,12 @@ GetCompaniesResponse
 
 **Example Usage Code Snippet**
 ```Typescript
-import { PanoraSDK } from '@panora/sdk-typescript';
+import { PanoraSDK } from 'panorasdk';
 
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
 (async () => {
-  const result = await sdk.crmCompanies.getCompanies('connection_token', { remoteData: true });
+  const result = await sdk.crmCompanies.getCompanies('x-connection-token', { remoteData: true });
   console.log(result);
 })();
 
@@ -1852,7 +1858,7 @@ UpdateCompanyResponse
 
 **Example Usage Code Snippet**
 ```Typescript
-import { PanoraSDK } from '@panora/sdk-typescript';
+import { PanoraSDK } from 'panorasdk';
 
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
@@ -1889,7 +1895,7 @@ GetCompanyResponse
 
 **Example Usage Code Snippet**
 ```Typescript
-import { PanoraSDK } from '@panora/sdk-typescript';
+import { PanoraSDK } from 'panorasdk';
 
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
@@ -1909,7 +1915,7 @@ Add a batch of Companies
 
 | Name    | Type| Description |
 | :-------- | :----------| :----------|
-| connectionToken | string | The connection token |
+| xConnectionToken | string | The connection token |
 | input | object | Request body. |
 
 **Optional Parameters**
@@ -1928,13 +1934,13 @@ CrmCompaniesAddCompaniesResponse
 
 **Example Usage Code Snippet**
 ```Typescript
-import { PanoraSDK } from '@panora/sdk-typescript';
+import { PanoraSDK } from 'panorasdk';
 
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
 (async () => {
   const input = [{}, {}];
-  const result = await sdk.crmCompanies.addCompanies(input, 'connection_token', {
+  const result = await sdk.crmCompanies.addCompanies(input, 'x-connection-token', {
     remoteData: true,
   });
   console.log(result);
@@ -1952,7 +1958,7 @@ Create a Engagement
 
 | Name    | Type| Description |
 | :-------- | :----------| :----------|
-| connectionToken | string | The connection token |
+| xConnectionToken | string | The connection token |
 | input | object | Request body. |
 
 **Optional Parameters**
@@ -1971,13 +1977,13 @@ UnifiedEngagementOutput
 
 **Example Usage Code Snippet**
 ```Typescript
-import { PanoraSDK } from '@panora/sdk-typescript';
+import { PanoraSDK } from 'panorasdk';
 
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
 (async () => {
   const input = { field_mappings: {} };
-  const result = await sdk.crmEngagements.addEngagement(input, 'connection_token', {
+  const result = await sdk.crmEngagements.addEngagement(input, 'x-connection-token', {
     remoteData: true,
   });
   console.log(result);
@@ -1994,7 +2000,7 @@ List a batch of Engagements
 
 | Name    | Type| Description |
 | :-------- | :----------| :----------|
-| connectionToken | string | The connection token |
+| xConnectionToken | string | The connection token |
 
 **Optional Parameters**
 
@@ -2011,12 +2017,14 @@ GetEngagementsResponse
 
 **Example Usage Code Snippet**
 ```Typescript
-import { PanoraSDK } from '@panora/sdk-typescript';
+import { PanoraSDK } from 'panorasdk';
 
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
 (async () => {
-  const result = await sdk.crmEngagements.getEngagements('connection_token', { remoteData: true });
+  const result = await sdk.crmEngagements.getEngagements('x-connection-token', {
+    remoteData: true,
+  });
   console.log(result);
 })();
 
@@ -2041,7 +2049,7 @@ UpdateEngagementResponse
 
 **Example Usage Code Snippet**
 ```Typescript
-import { PanoraSDK } from '@panora/sdk-typescript';
+import { PanoraSDK } from 'panorasdk';
 
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
@@ -2078,7 +2086,7 @@ GetEngagementResponse
 
 **Example Usage Code Snippet**
 ```Typescript
-import { PanoraSDK } from '@panora/sdk-typescript';
+import { PanoraSDK } from 'panorasdk';
 
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
@@ -2098,7 +2106,7 @@ Add a batch of Engagements
 
 | Name    | Type| Description |
 | :-------- | :----------| :----------|
-| connectionToken | string | The connection token |
+| xConnectionToken | string | The connection token |
 | input | object | Request body. |
 
 **Optional Parameters**
@@ -2117,13 +2125,13 @@ CrmEngagementsAddEngagementsResponse
 
 **Example Usage Code Snippet**
 ```Typescript
-import { PanoraSDK } from '@panora/sdk-typescript';
+import { PanoraSDK } from 'panorasdk';
 
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
 (async () => {
   const input = [{}, {}];
-  const result = await sdk.crmEngagements.addEngagements(input, 'connection_token', {
+  const result = await sdk.crmEngagements.addEngagements(input, 'x-connection-token', {
     remoteData: true,
   });
   console.log(result);
@@ -2141,7 +2149,7 @@ List a batch of Stages
 
 | Name    | Type| Description |
 | :-------- | :----------| :----------|
-| connectionToken | string | The connection token |
+| xConnectionToken | string | The connection token |
 
 **Optional Parameters**
 
@@ -2158,12 +2166,12 @@ GetStagesResponse
 
 **Example Usage Code Snippet**
 ```Typescript
-import { PanoraSDK } from '@panora/sdk-typescript';
+import { PanoraSDK } from 'panorasdk';
 
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
 (async () => {
-  const result = await sdk.crmStages.getStages('connection_token', { remoteData: true });
+  const result = await sdk.crmStages.getStages('x-connection-token', { remoteData: true });
   console.log(result);
 })();
 
@@ -2195,7 +2203,7 @@ GetStageResponse
 
 **Example Usage Code Snippet**
 ```Typescript
-import { PanoraSDK } from '@panora/sdk-typescript';
+import { PanoraSDK } from 'panorasdk';
 
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
@@ -2216,7 +2224,7 @@ Create a Task
 
 | Name    | Type| Description |
 | :-------- | :----------| :----------|
-| connectionToken | string | The connection token |
+| xConnectionToken | string | The connection token |
 | input | object | Request body. |
 
 **Optional Parameters**
@@ -2235,13 +2243,13 @@ UnifiedTaskOutput
 
 **Example Usage Code Snippet**
 ```Typescript
-import { PanoraSDK } from '@panora/sdk-typescript';
+import { PanoraSDK } from 'panorasdk';
 
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
 (async () => {
   const input = { field_mappings: {} };
-  const result = await sdk.crmTasks.addTask(input, 'connection_token', { remoteData: true });
+  const result = await sdk.crmTasks.addTask(input, 'x-connection-token', { remoteData: true });
   console.log(result);
 })();
 
@@ -2256,7 +2264,7 @@ List a batch of Tasks
 
 | Name    | Type| Description |
 | :-------- | :----------| :----------|
-| connectionToken | string | The connection token |
+| xConnectionToken | string | The connection token |
 
 **Optional Parameters**
 
@@ -2273,12 +2281,12 @@ GetTasksResponse
 
 **Example Usage Code Snippet**
 ```Typescript
-import { PanoraSDK } from '@panora/sdk-typescript';
+import { PanoraSDK } from 'panorasdk';
 
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
 (async () => {
-  const result = await sdk.crmTasks.getTasks('connection_token', { remoteData: true });
+  const result = await sdk.crmTasks.getTasks('x-connection-token', { remoteData: true });
   console.log(result);
 })();
 
@@ -2303,7 +2311,7 @@ UpdateTaskResponse
 
 **Example Usage Code Snippet**
 ```Typescript
-import { PanoraSDK } from '@panora/sdk-typescript';
+import { PanoraSDK } from 'panorasdk';
 
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
@@ -2340,7 +2348,7 @@ GetTaskResponse
 
 **Example Usage Code Snippet**
 ```Typescript
-import { PanoraSDK } from '@panora/sdk-typescript';
+import { PanoraSDK } from 'panorasdk';
 
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
@@ -2360,7 +2368,7 @@ Add a batch of Tasks
 
 | Name    | Type| Description |
 | :-------- | :----------| :----------|
-| connectionToken | string | The connection token |
+| xConnectionToken | string | The connection token |
 | input | object | Request body. |
 
 **Optional Parameters**
@@ -2379,13 +2387,13 @@ CrmTasksAddTasksResponse
 
 **Example Usage Code Snippet**
 ```Typescript
-import { PanoraSDK } from '@panora/sdk-typescript';
+import { PanoraSDK } from 'panorasdk';
 
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
 (async () => {
   const input = [{}, {}];
-  const result = await sdk.crmTasks.addTasks(input, 'connection_token', { remoteData: true });
+  const result = await sdk.crmTasks.addTasks(input, 'x-connection-token', { remoteData: true });
   console.log(result);
 })();
 
@@ -2401,7 +2409,7 @@ List a batch of Users
 
 | Name    | Type| Description |
 | :-------- | :----------| :----------|
-| connectionToken | string | The connection token |
+| xConnectionToken | string | The connection token |
 
 **Optional Parameters**
 
@@ -2418,12 +2426,12 @@ GetUsersResponse
 
 **Example Usage Code Snippet**
 ```Typescript
-import { PanoraSDK } from '@panora/sdk-typescript';
+import { PanoraSDK } from 'panorasdk';
 
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
 (async () => {
-  const result = await sdk.crmUsers.getUsers('connection_token', { remoteData: true });
+  const result = await sdk.crmUsers.getUsers('x-connection-token', { remoteData: true });
   console.log(result);
 })();
 
@@ -2455,7 +2463,7 @@ GetUserResponse
 
 **Example Usage Code Snippet**
 ```Typescript
-import { PanoraSDK } from '@panora/sdk-typescript';
+import { PanoraSDK } from 'panorasdk';
 
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
@@ -2476,7 +2484,7 @@ Create a Ticket
 
 | Name    | Type| Description |
 | :-------- | :----------| :----------|
-| connectionToken | string | The connection token |
+| xConnectionToken | string | The connection token |
 | input | object | Request body. |
 
 **Optional Parameters**
@@ -2495,28 +2503,28 @@ UnifiedTicketOutput
 
 **Example Usage Code Snippet**
 ```Typescript
-import { PanoraSDK } from '@panora/sdk-typescript';
+import { PanoraSDK } from 'panorasdk';
 
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
 (async () => {
   const input = {
     account_id: 'account_id',
-    assigned_to: ['aliquip', 'enim'],
-    comment: ['pariatur nulla deserunt', 'irure incididunt Duis minim'],
-    completed_at: '1912-09-29T15:29:41.0Z',
+    assigned_to: ['sint pariatur eu incididunt', 'occaecat'],
+    comment: ['sed', 'elit qui voluptate'],
+    completed_at: '1954-11-13T05:46:39.0Z',
     contact_id: 'contact_id',
-    description: ['Duis nostrud in', 'magna adipisicing'],
-    due_date: '1945-12-08T15:08:52.0Z',
+    description: ['aute dolore', 'dolor velit sint pariatur'],
+    due_date: '1908-12-16T01:03:07.0Z',
     field_mappings: {},
     name: 'name',
     parent_ticket: 'parent_ticket',
     priority: 'priority',
     status: 'status',
-    tags: ['cillum', 'officia dolore'],
+    tags: ['enim veniam nostrud minim adipisicing', 'dolor'],
     type_: 'type',
   };
-  const result = await sdk.ticketingTickets.addTicket(input, 'connection_token', {
+  const result = await sdk.ticketingTickets.addTicket(input, 'x-connection-token', {
     remoteData: true,
   });
   console.log(result);
@@ -2533,7 +2541,7 @@ List a batch of Tickets
 
 | Name    | Type| Description |
 | :-------- | :----------| :----------|
-| connectionToken | string | The connection token |
+| xConnectionToken | string | The connection token |
 
 **Optional Parameters**
 
@@ -2550,12 +2558,12 @@ GetTicketsResponse
 
 **Example Usage Code Snippet**
 ```Typescript
-import { PanoraSDK } from '@panora/sdk-typescript';
+import { PanoraSDK } from 'panorasdk';
 
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
 (async () => {
-  const result = await sdk.ticketingTickets.getTickets('connection_token', { remoteData: true });
+  const result = await sdk.ticketingTickets.getTickets('x-connection-token', { remoteData: true });
   console.log(result);
 })();
 
@@ -2580,7 +2588,7 @@ UnifiedTicketOutput
 
 **Example Usage Code Snippet**
 ```Typescript
-import { PanoraSDK } from '@panora/sdk-typescript';
+import { PanoraSDK } from 'panorasdk';
 
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
@@ -2617,7 +2625,7 @@ GetTicketResponse
 
 **Example Usage Code Snippet**
 ```Typescript
-import { PanoraSDK } from '@panora/sdk-typescript';
+import { PanoraSDK } from 'panorasdk';
 
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
@@ -2637,7 +2645,7 @@ Add a batch of Tickets
 
 | Name    | Type| Description |
 | :-------- | :----------| :----------|
-| connectionToken | string | The connection token |
+| xConnectionToken | string | The connection token |
 | input | object | Request body. |
 
 **Optional Parameters**
@@ -2656,13 +2664,13 @@ TicketingTicketsAddTicketsResponse
 
 **Example Usage Code Snippet**
 ```Typescript
-import { PanoraSDK } from '@panora/sdk-typescript';
+import { PanoraSDK } from 'panorasdk';
 
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
 (async () => {
   const input = [{}, {}];
-  const result = await sdk.ticketingTickets.addTickets(input, 'connection_token', {
+  const result = await sdk.ticketingTickets.addTickets(input, 'x-connection-token', {
     remoteData: true,
   });
   console.log(result);
@@ -2680,7 +2688,7 @@ Create a Comment
 
 | Name    | Type| Description |
 | :-------- | :----------| :----------|
-| connectionToken | string | The connection token |
+| xConnectionToken | string | The connection token |
 | input | object | Request body. |
 
 **Optional Parameters**
@@ -2699,22 +2707,22 @@ UnifiedCommentOutput
 
 **Example Usage Code Snippet**
 ```Typescript
-import { PanoraSDK } from '@panora/sdk-typescript';
+import { PanoraSDK } from 'panorasdk';
 
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
 (async () => {
   const input = {
-    attachments: ['cillum sint dolor anim magna', 'labore mollit magna elit'],
+    attachments: ['cillum', 'dolor ipsum in'],
     body: 'body',
     contact_id: 'contact_id',
     creator_type: 'creator_type',
     html_body: 'html_body',
-    is_private: true,
+    is_private: false,
     ticket_id: 'ticket_id',
     user_id: 'user_id',
   };
-  const result = await sdk.ticketingComments.addComment(input, 'connection_token', {
+  const result = await sdk.ticketingComments.addComment(input, 'x-connection-token', {
     remoteData: true,
   });
   console.log(result);
@@ -2731,7 +2739,7 @@ List a batch of Comments
 
 | Name    | Type| Description |
 | :-------- | :----------| :----------|
-| connectionToken | string | The connection token |
+| xConnectionToken | string | The connection token |
 
 **Optional Parameters**
 
@@ -2748,12 +2756,14 @@ GetCommentsResponse
 
 **Example Usage Code Snippet**
 ```Typescript
-import { PanoraSDK } from '@panora/sdk-typescript';
+import { PanoraSDK } from 'panorasdk';
 
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
 (async () => {
-  const result = await sdk.ticketingComments.getComments('connection_token', { remoteData: true });
+  const result = await sdk.ticketingComments.getComments('x-connection-token', {
+    remoteData: true,
+  });
   console.log(result);
 })();
 
@@ -2785,7 +2795,7 @@ GetCommentResponse
 
 **Example Usage Code Snippet**
 ```Typescript
-import { PanoraSDK } from '@panora/sdk-typescript';
+import { PanoraSDK } from 'panorasdk';
 
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
@@ -2805,7 +2815,7 @@ Add a batch of Comments
 
 | Name    | Type| Description |
 | :-------- | :----------| :----------|
-| connectionToken | string | The connection token |
+| xConnectionToken | string | The connection token |
 | input | object | Request body. |
 
 **Optional Parameters**
@@ -2824,13 +2834,13 @@ TicketingCommentsAddCommentsResponse
 
 **Example Usage Code Snippet**
 ```Typescript
-import { PanoraSDK } from '@panora/sdk-typescript';
+import { PanoraSDK } from 'panorasdk';
 
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
 (async () => {
   const input = [{}, {}];
-  const result = await sdk.ticketingComments.addComments(input, 'connection_token', {
+  const result = await sdk.ticketingComments.addComments(input, 'x-connection-token', {
     remoteData: true,
   });
   console.log(result);
@@ -2848,7 +2858,7 @@ List a batch of Users
 
 | Name    | Type| Description |
 | :-------- | :----------| :----------|
-| connectionToken | string | The connection token |
+| xConnectionToken | string | The connection token |
 
 **Optional Parameters**
 
@@ -2865,12 +2875,12 @@ GetUsersResponse
 
 **Example Usage Code Snippet**
 ```Typescript
-import { PanoraSDK } from '@panora/sdk-typescript';
+import { PanoraSDK } from 'panorasdk';
 
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
 (async () => {
-  const result = await sdk.ticketingUsers.getUsers('connection_token', { remoteData: true });
+  const result = await sdk.ticketingUsers.getUsers('x-connection-token', { remoteData: true });
   console.log(result);
 })();
 
@@ -2902,7 +2912,7 @@ GetUserResponse
 
 **Example Usage Code Snippet**
 ```Typescript
-import { PanoraSDK } from '@panora/sdk-typescript';
+import { PanoraSDK } from 'panorasdk';
 
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
@@ -2923,7 +2933,7 @@ Create a Attachment
 
 | Name    | Type| Description |
 | :-------- | :----------| :----------|
-| connectionToken | string | The connection token |
+| xConnectionToken | string | The connection token |
 | input | object | Request body. |
 
 **Optional Parameters**
@@ -2942,7 +2952,7 @@ UnifiedAttachmentOutput
 
 **Example Usage Code Snippet**
 ```Typescript
-import { PanoraSDK } from '@panora/sdk-typescript';
+import { PanoraSDK } from 'panorasdk';
 
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
@@ -2953,7 +2963,7 @@ const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
     file_url: 'file_url',
     uploader: 'uploader',
   };
-  const result = await sdk.ticketingAttachments.addAttachment(input, 'connection_token', {
+  const result = await sdk.ticketingAttachments.addAttachment(input, 'x-connection-token', {
     remoteData: true,
   });
   console.log(result);
@@ -2970,7 +2980,7 @@ List a batch of Attachments
 
 | Name    | Type| Description |
 | :-------- | :----------| :----------|
-| connectionToken | string | The connection token |
+| xConnectionToken | string | The connection token |
 
 **Optional Parameters**
 
@@ -2987,12 +2997,12 @@ GetAttachmentsResponse
 
 **Example Usage Code Snippet**
 ```Typescript
-import { PanoraSDK } from '@panora/sdk-typescript';
+import { PanoraSDK } from 'panorasdk';
 
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
 (async () => {
-  const result = await sdk.ticketingAttachments.getAttachments('connection_token', {
+  const result = await sdk.ticketingAttachments.getAttachments('x-connection-token', {
     remoteData: true,
   });
   console.log(result);
@@ -3026,7 +3036,7 @@ GetAttachmentResponse
 
 **Example Usage Code Snippet**
 ```Typescript
-import { PanoraSDK } from '@panora/sdk-typescript';
+import { PanoraSDK } from 'panorasdk';
 
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
@@ -3063,7 +3073,7 @@ DownloadAttachmentResponse
 
 **Example Usage Code Snippet**
 ```Typescript
-import { PanoraSDK } from '@panora/sdk-typescript';
+import { PanoraSDK } from 'panorasdk';
 
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
@@ -3083,7 +3093,7 @@ Add a batch of Attachments
 
 | Name    | Type| Description |
 | :-------- | :----------| :----------|
-| connectionToken | string | The connection token |
+| xConnectionToken | string | The connection token |
 | input | object | Request body. |
 
 **Optional Parameters**
@@ -3102,13 +3112,13 @@ TicketingAttachmentsAddAttachmentsResponse
 
 **Example Usage Code Snippet**
 ```Typescript
-import { PanoraSDK } from '@panora/sdk-typescript';
+import { PanoraSDK } from 'panorasdk';
 
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
 (async () => {
   const input = [{}, {}];
-  const result = await sdk.ticketingAttachments.addAttachments(input, 'connection_token', {
+  const result = await sdk.ticketingAttachments.addAttachments(input, 'x-connection-token', {
     remoteData: true,
   });
   console.log(result);
@@ -3126,7 +3136,7 @@ List a batch of Contacts
 
 | Name    | Type| Description |
 | :-------- | :----------| :----------|
-| connectionToken | string | The connection token |
+| xConnectionToken | string | The connection token |
 
 **Optional Parameters**
 
@@ -3143,12 +3153,14 @@ GetContactsResponse
 
 **Example Usage Code Snippet**
 ```Typescript
-import { PanoraSDK } from '@panora/sdk-typescript';
+import { PanoraSDK } from 'panorasdk';
 
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
 (async () => {
-  const result = await sdk.ticketingContacts.getContacts('connection_token', { remoteData: true });
+  const result = await sdk.ticketingContacts.getContacts('x-connection-token', {
+    remoteData: true,
+  });
   console.log(result);
 })();
 
@@ -3180,7 +3192,7 @@ GetContactResponse
 
 **Example Usage Code Snippet**
 ```Typescript
-import { PanoraSDK } from '@panora/sdk-typescript';
+import { PanoraSDK } from 'panorasdk';
 
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
@@ -3201,7 +3213,7 @@ List a batch of Accounts
 
 | Name    | Type| Description |
 | :-------- | :----------| :----------|
-| connectionToken | string | The connection token |
+| xConnectionToken | string | The connection token |
 
 **Optional Parameters**
 
@@ -3218,12 +3230,14 @@ GetAccountsResponse
 
 **Example Usage Code Snippet**
 ```Typescript
-import { PanoraSDK } from '@panora/sdk-typescript';
+import { PanoraSDK } from 'panorasdk';
 
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
 (async () => {
-  const result = await sdk.ticketingAccounts.getAccounts('connection_token', { remoteData: true });
+  const result = await sdk.ticketingAccounts.getAccounts('x-connection-token', {
+    remoteData: true,
+  });
   console.log(result);
 })();
 
@@ -3255,7 +3269,7 @@ GetAccountResponse
 
 **Example Usage Code Snippet**
 ```Typescript
-import { PanoraSDK } from '@panora/sdk-typescript';
+import { PanoraSDK } from 'panorasdk';
 
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
@@ -3276,7 +3290,7 @@ List a batch of Tags
 
 | Name    | Type| Description |
 | :-------- | :----------| :----------|
-| connectionToken | string | The connection token |
+| xConnectionToken | string | The connection token |
 
 **Optional Parameters**
 
@@ -3293,12 +3307,12 @@ GetTagsResponse
 
 **Example Usage Code Snippet**
 ```Typescript
-import { PanoraSDK } from '@panora/sdk-typescript';
+import { PanoraSDK } from 'panorasdk';
 
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
 (async () => {
-  const result = await sdk.ticketingTags.getTags('connection_token', { remoteData: true });
+  const result = await sdk.ticketingTags.getTags('x-connection-token', { remoteData: true });
   console.log(result);
 })();
 
@@ -3330,7 +3344,7 @@ GetTagResponse
 
 **Example Usage Code Snippet**
 ```Typescript
-import { PanoraSDK } from '@panora/sdk-typescript';
+import { PanoraSDK } from 'panorasdk';
 
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
@@ -3351,7 +3365,7 @@ List a batch of Teams
 
 | Name    | Type| Description |
 | :-------- | :----------| :----------|
-| connectionToken | string | The connection token |
+| xConnectionToken | string | The connection token |
 
 **Optional Parameters**
 
@@ -3368,12 +3382,12 @@ GetTeamsResponse
 
 **Example Usage Code Snippet**
 ```Typescript
-import { PanoraSDK } from '@panora/sdk-typescript';
+import { PanoraSDK } from 'panorasdk';
 
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
 (async () => {
-  const result = await sdk.ticketingTeams.getTeams('connection_token', { remoteData: true });
+  const result = await sdk.ticketingTeams.getTeams('x-connection-token', { remoteData: true });
   console.log(result);
 })();
 
@@ -3405,7 +3419,7 @@ GetTeamResponse
 
 **Example Usage Code Snippet**
 ```Typescript
-import { PanoraSDK } from '@panora/sdk-typescript';
+import { PanoraSDK } from 'panorasdk';
 
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 

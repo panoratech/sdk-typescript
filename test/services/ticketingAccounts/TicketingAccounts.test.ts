@@ -25,7 +25,7 @@ describe('test TicketingAccounts', () => {
         .get('/ticketing/accounts?remote_data=true')
         .reply(200, { data: {} });
       return sdk.ticketingAccounts
-        .getAccounts('neque', { remoteData: true })
+        .getAccounts('deleniti', { remoteData: true })
         .then((r: any) => expect(r.data).toEqual({}));
     });
 
@@ -41,7 +41,7 @@ describe('test TicketingAccounts', () => {
         .get('/ticketing/accounts?remote_data=true')
         .reply(404, { data: {} });
       return expect(
-        async () => await sdk.ticketingAccounts.getAccounts('nulla', { remoteData: true }),
+        async () => await sdk.ticketingAccounts.getAccounts('reiciendis', { remoteData: true }),
       ).rejects.toThrow();
     });
   });
@@ -49,26 +49,26 @@ describe('test TicketingAccounts', () => {
   describe('test getAccount', () => {
     test('test api call', () => {
       const scope = nock('https://api-dev.panora.dev')
-        .get('/ticketing/accounts/1552621530?remote_data=true')
+        .get('/ticketing/accounts/7550007377?remote_data=true')
         .reply(200, { data: {} });
       return sdk.ticketingAccounts
-        .getAccount('1552621530', { remoteData: true })
+        .getAccount('7550007377', { remoteData: true })
         .then((r: any) => expect(r.data).toEqual({}));
     });
 
     test('test will throw error if required fields missing', () => {
       const scope = nock('https://api-dev.panora.dev')
-        .get('/ticketing/accounts/4673617762?remote_data=true')
+        .get('/ticketing/accounts/1474645947?remote_data=true')
         .reply(200, { data: {} });
       return expect(async () => await sdk.ticketingAccounts.getAccount()).rejects.toThrow();
     });
 
     test('test will throw error on a non-200 response', () => {
       const scope = nock('https://api-dev.panora.dev')
-        .get('/ticketing/accounts/3140717320?remote_data=true')
+        .get('/ticketing/accounts/2032910759?remote_data=true')
         .reply(404, { data: {} });
       return expect(
-        async () => await sdk.ticketingAccounts.getAccount('3140717320', { remoteData: true }),
+        async () => await sdk.ticketingAccounts.getAccount('2032910759', { remoteData: true }),
       ).rejects.toThrow();
     });
   });

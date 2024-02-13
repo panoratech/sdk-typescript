@@ -1,6 +1,6 @@
 {
   "liblabVersion": "0.1.34",
-  "date": "2024-02-09T13:08:32.469Z",
+  "date": "2024-02-13T12:39:50.957Z",
   "config": {
     "authentication": {
       "access": {
@@ -14,7 +14,7 @@
     "inputFileName": "/tmp/resources/spec/open-api-spec.json",
     "environmentVariables": [],
     "fileOutput": "/tmp",
-    "tempDir": "/tmp/liblab-codegen-0.1.34-8NkdE6",
+    "tempDir": "/tmp/liblab-codegen-0.1.34-6a0PYC",
     "inferServiceNames": false,
     "httpLibrary": {
       "name": "axios",

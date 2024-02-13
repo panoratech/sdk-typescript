@@ -25,7 +25,7 @@ describe('test TicketingAttachments', () => {
         .get('/ticketing/attachments?remote_data=true')
         .reply(200, { data: {} });
       return sdk.ticketingAttachments
-        .getAttachments('odit', { remoteData: true })
+        .getAttachments('architecto', { remoteData: true })
         .then((r: any) => expect(r.data).toEqual({}));
     });
 
@@ -41,7 +41,7 @@ describe('test TicketingAttachments', () => {
         .get('/ticketing/attachments?remote_data=true')
         .reply(404, { data: {} });
       return expect(
-        async () => await sdk.ticketingAttachments.getAttachments('iste', { remoteData: true }),
+        async () => await sdk.ticketingAttachments.getAttachments('officia', { remoteData: true }),
       ).rejects.toThrow();
     });
   });
@@ -52,7 +52,7 @@ describe('test TicketingAttachments', () => {
         .post('/ticketing/attachments?remote_data=true')
         .reply(200, { data: {} });
       return sdk.ticketingAttachments
-        .addAttachment({}, 'quisquam', { remoteData: true })
+        .addAttachment({}, 'provident', { remoteData: true })
         .then((r: any) => expect(r.data).toEqual({}));
     });
 
@@ -69,7 +69,7 @@ describe('test TicketingAttachments', () => {
         .reply(404, { data: {} });
       return expect(
         async () =>
-          await sdk.ticketingAttachments.addAttachment({}, 'repudiandae', { remoteData: true }),
+          await sdk.ticketingAttachments.addAttachment({}, 'expedita', { remoteData: true }),
       ).rejects.toThrow();
     });
   });
@@ -77,27 +77,27 @@ describe('test TicketingAttachments', () => {
   describe('test getAttachment', () => {
     test('test api call', () => {
       const scope = nock('https://api-dev.panora.dev')
-        .get('/ticketing/attachments/2525750804?remote_data=true')
+        .get('/ticketing/attachments/7136583869?remote_data=true')
         .reply(200, { data: {} });
       return sdk.ticketingAttachments
-        .getAttachment('2525750804', { remoteData: true })
+        .getAttachment('7136583869', { remoteData: true })
         .then((r: any) => expect(r.data).toEqual({}));
     });
 
     test('test will throw error if required fields missing', () => {
       const scope = nock('https://api-dev.panora.dev')
-        .get('/ticketing/attachments/4584043886?remote_data=true')
+        .get('/ticketing/attachments/8597527842?remote_data=true')
         .reply(200, { data: {} });
       return expect(async () => await sdk.ticketingAttachments.getAttachment()).rejects.toThrow();
     });
 
     test('test will throw error on a non-200 response', () => {
       const scope = nock('https://api-dev.panora.dev')
-        .get('/ticketing/attachments/1494154474?remote_data=true')
+        .get('/ticketing/attachments/5257602895?remote_data=true')
         .reply(404, { data: {} });
       return expect(
         async () =>
-          await sdk.ticketingAttachments.getAttachment('1494154474', { remoteData: true }),
+          await sdk.ticketingAttachments.getAttachment('5257602895', { remoteData: true }),
       ).rejects.toThrow();
     });
   });
@@ -105,16 +105,16 @@ describe('test TicketingAttachments', () => {
   describe('test downloadAttachment', () => {
     test('test api call', () => {
       const scope = nock('https://api-dev.panora.dev')
-        .get('/ticketing/attachments/2986421852/download?remote_data=true')
+        .get('/ticketing/attachments/4278053092/download?remote_data=true')
         .reply(200, { data: {} });
       return sdk.ticketingAttachments
-        .downloadAttachment('2986421852', { remoteData: true })
+        .downloadAttachment('4278053092', { remoteData: true })
         .then((r: any) => expect(r.data).toEqual({}));
     });
 
     test('test will throw error if required fields missing', () => {
       const scope = nock('https://api-dev.panora.dev')
-        .get('/ticketing/attachments/9078199129/download?remote_data=true')
+        .get('/ticketing/attachments/8911856413/download?remote_data=true')
         .reply(200, { data: {} });
       return expect(
         async () => await sdk.ticketingAttachments.downloadAttachment(),
@@ -123,11 +123,11 @@ describe('test TicketingAttachments', () => {
 
     test('test will throw error on a non-200 response', () => {
       const scope = nock('https://api-dev.panora.dev')
-        .get('/ticketing/attachments/2320612468/download?remote_data=true')
+        .get('/ticketing/attachments/2804424278/download?remote_data=true')
         .reply(404, { data: {} });
       return expect(
         async () =>
-          await sdk.ticketingAttachments.downloadAttachment('2320612468', { remoteData: true }),
+          await sdk.ticketingAttachments.downloadAttachment('2804424278', { remoteData: true }),
       ).rejects.toThrow();
     });
   });
@@ -138,7 +138,7 @@ describe('test TicketingAttachments', () => {
         .post('/ticketing/attachments/batch?remote_data=true')
         .reply(200, { data: {} });
       return sdk.ticketingAttachments
-        .addAttachments({}, 'hic', { remoteData: true })
+        .addAttachments({}, 'eius', { remoteData: true })
         .then((r: any) => expect(r.data).toEqual({}));
     });
 
@@ -155,7 +155,7 @@ describe('test TicketingAttachments', () => {
         .reply(404, { data: {} });
       return expect(
         async () =>
-          await sdk.ticketingAttachments.addAttachments({}, 'excepturi', { remoteData: true }),
+          await sdk.ticketingAttachments.addAttachments({}, 'assumenda', { remoteData: true }),
       ).rejects.toThrow();
     });
   });
