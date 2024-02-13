@@ -1,5 +1,11 @@
 # @panora/sdk-typescript
 
+## 1.2.1
+
+### Patch Changes
+
+- f5a8616: little patch
+
 ## 1.2.0
 
 ### Minor Changes
