@@ -25,7 +25,7 @@ describe('test CrmNotes', () => {
         .get('/crm/notes?remote_data=true')
         .reply(200, { data: {} });
       return sdk.crmNotes
-        .getNotes('aliquid', { remoteData: true })
+        .getNotes('expedita', { remoteData: true })
         .then((r: any) => expect(r.data).toEqual({}));
     });
 
@@ -41,7 +41,7 @@ describe('test CrmNotes', () => {
         .get('/crm/notes?remote_data=true')
         .reply(404, { data: {} });
       return expect(
-        async () => await sdk.crmNotes.getNotes('corrupti', { remoteData: true }),
+        async () => await sdk.crmNotes.getNotes('doloribus', { remoteData: true }),
       ).rejects.toThrow();
     });
   });
@@ -52,7 +52,7 @@ describe('test CrmNotes', () => {
         .post('/crm/notes?remote_data=true')
         .reply(200, { data: {} });
       return sdk.crmNotes
-        .addNote({}, 'occaecati', { remoteData: true })
+        .addNote({}, 'necessitatibus', { remoteData: true })
         .then((r: any) => expect(r.data).toEqual({}));
     });
 
@@ -68,7 +68,7 @@ describe('test CrmNotes', () => {
         .post('/crm/notes?remote_data=true')
         .reply(404, { data: {} });
       return expect(
-        async () => await sdk.crmNotes.addNote({}, 'ipsum', { remoteData: true }),
+        async () => await sdk.crmNotes.addNote({}, 'iure', { remoteData: true }),
       ).rejects.toThrow();
     });
   });
@@ -76,26 +76,26 @@ describe('test CrmNotes', () => {
   describe('test getNote', () => {
     test('test api call', () => {
       const scope = nock('https://api-dev.panora.dev')
-        .get('/crm/notes/5766868405?remote_data=true')
+        .get('/crm/notes/2267054709?remote_data=true')
         .reply(200, { data: {} });
       return sdk.crmNotes
-        .getNote('5766868405', { remoteData: true })
+        .getNote('2267054709', { remoteData: true })
         .then((r: any) => expect(r.data).toEqual({}));
     });
 
     test('test will throw error if required fields missing', () => {
       const scope = nock('https://api-dev.panora.dev')
-        .get('/crm/notes/1447905207?remote_data=true')
+        .get('/crm/notes/1338485442?remote_data=true')
         .reply(200, { data: {} });
       return expect(async () => await sdk.crmNotes.getNote()).rejects.toThrow();
     });
 
     test('test will throw error on a non-200 response', () => {
       const scope = nock('https://api-dev.panora.dev')
-        .get('/crm/notes/1872236417?remote_data=true')
+        .get('/crm/notes/7357594327?remote_data=true')
         .reply(404, { data: {} });
       return expect(
-        async () => await sdk.crmNotes.getNote('1872236417', { remoteData: true }),
+        async () => await sdk.crmNotes.getNote('7357594327', { remoteData: true }),
       ).rejects.toThrow();
     });
   });
@@ -106,7 +106,7 @@ describe('test CrmNotes', () => {
         .post('/crm/notes/batch?remote_data=true')
         .reply(200, { data: {} });
       return sdk.crmNotes
-        .addNotes({}, 'quam', { remoteData: true })
+        .addNotes({}, 'odit', { remoteData: true })
         .then((r: any) => expect(r.data).toEqual({}));
     });
 
@@ -122,7 +122,7 @@ describe('test CrmNotes', () => {
         .post('/crm/notes/batch?remote_data=true')
         .reply(404, { data: {} });
       return expect(
-        async () => await sdk.crmNotes.addNotes({}, 'omnis', { remoteData: true }),
+        async () => await sdk.crmNotes.addNotes({}, 'quae', { remoteData: true }),
       ).rejects.toThrow();
     });
   });

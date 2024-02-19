@@ -25,7 +25,7 @@ describe('test TicketingTags', () => {
         .get('/ticketing/tags?remote_data=true')
         .reply(200, { data: {} });
       return sdk.ticketingTags
-        .getTags('fugiat', { remoteData: true })
+        .getTags('dolore', { remoteData: true })
         .then((r: any) => expect(r.data).toEqual({}));
     });
 
@@ -41,7 +41,7 @@ describe('test TicketingTags', () => {
         .get('/ticketing/tags?remote_data=true')
         .reply(404, { data: {} });
       return expect(
-        async () => await sdk.ticketingTags.getTags('atque', { remoteData: true }),
+        async () => await sdk.ticketingTags.getTags('nostrum', { remoteData: true }),
       ).rejects.toThrow();
     });
   });
@@ -49,26 +49,26 @@ describe('test TicketingTags', () => {
   describe('test getTag', () => {
     test('test api call', () => {
       const scope = nock('https://api-dev.panora.dev')
-        .get('/ticketing/tags/3937747456?remote_data=true')
+        .get('/ticketing/tags/7430750910?remote_data=true')
         .reply(200, { data: {} });
       return sdk.ticketingTags
-        .getTag('3937747456', { remoteData: true })
+        .getTag('7430750910', { remoteData: true })
         .then((r: any) => expect(r.data).toEqual({}));
     });
 
     test('test will throw error if required fields missing', () => {
       const scope = nock('https://api-dev.panora.dev')
-        .get('/ticketing/tags/1962540869?remote_data=true')
+        .get('/ticketing/tags/9502951023?remote_data=true')
         .reply(200, { data: {} });
       return expect(async () => await sdk.ticketingTags.getTag()).rejects.toThrow();
     });
 
     test('test will throw error on a non-200 response', () => {
       const scope = nock('https://api-dev.panora.dev')
-        .get('/ticketing/tags/2175103905?remote_data=true')
+        .get('/ticketing/tags/4307723652?remote_data=true')
         .reply(404, { data: {} });
       return expect(
-        async () => await sdk.ticketingTags.getTag('2175103905', { remoteData: true }),
+        async () => await sdk.ticketingTags.getTag('4307723652', { remoteData: true }),
       ).rejects.toThrow();
     });
   });

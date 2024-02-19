@@ -25,7 +25,7 @@ describe('test TicketingComments', () => {
         .get('/ticketing/comments?remote_data=true')
         .reply(200, { data: {} });
       return sdk.ticketingComments
-        .getComments('eius', { remoteData: true })
+        .getComments('eveniet', { remoteData: true })
         .then((r: any) => expect(r.data).toEqual({}));
     });
 
@@ -41,7 +41,7 @@ describe('test TicketingComments', () => {
         .get('/ticketing/comments?remote_data=true')
         .reply(404, { data: {} });
       return expect(
-        async () => await sdk.ticketingComments.getComments('voluptatibus', { remoteData: true }),
+        async () => await sdk.ticketingComments.getComments('odit', { remoteData: true }),
       ).rejects.toThrow();
     });
   });
@@ -52,7 +52,7 @@ describe('test TicketingComments', () => {
         .post('/ticketing/comments?remote_data=true')
         .reply(200, { data: {} });
       return sdk.ticketingComments
-        .addComment({}, 'sint', { remoteData: true })
+        .addComment({}, 'voluptatem', { remoteData: true })
         .then((r: any) => expect(r.data).toEqual({}));
     });
 
@@ -68,7 +68,7 @@ describe('test TicketingComments', () => {
         .post('/ticketing/comments?remote_data=true')
         .reply(404, { data: {} });
       return expect(
-        async () => await sdk.ticketingComments.addComment({}, 'laudantium', { remoteData: true }),
+        async () => await sdk.ticketingComments.addComment({}, 'tempore', { remoteData: true }),
       ).rejects.toThrow();
     });
   });
@@ -76,26 +76,26 @@ describe('test TicketingComments', () => {
   describe('test getComment', () => {
     test('test api call', () => {
       const scope = nock('https://api-dev.panora.dev')
-        .get('/ticketing/comments/7527506930?remote_data=true')
+        .get('/ticketing/comments/4668956154?remote_data=true')
         .reply(200, { data: {} });
       return sdk.ticketingComments
-        .getComment('7527506930', { remoteData: true })
+        .getComment('4668956154', { remoteData: true })
         .then((r: any) => expect(r.data).toEqual({}));
     });
 
     test('test will throw error if required fields missing', () => {
       const scope = nock('https://api-dev.panora.dev')
-        .get('/ticketing/comments/7378345763?remote_data=true')
+        .get('/ticketing/comments/1729875966?remote_data=true')
         .reply(200, { data: {} });
       return expect(async () => await sdk.ticketingComments.getComment()).rejects.toThrow();
     });
 
     test('test will throw error on a non-200 response', () => {
       const scope = nock('https://api-dev.panora.dev')
-        .get('/ticketing/comments/1139866669?remote_data=true')
+        .get('/ticketing/comments/3193261428?remote_data=true')
         .reply(404, { data: {} });
       return expect(
-        async () => await sdk.ticketingComments.getComment('1139866669', { remoteData: true }),
+        async () => await sdk.ticketingComments.getComment('3193261428', { remoteData: true }),
       ).rejects.toThrow();
     });
   });
@@ -106,7 +106,7 @@ describe('test TicketingComments', () => {
         .post('/ticketing/comments/batch?remote_data=true')
         .reply(200, { data: {} });
       return sdk.ticketingComments
-        .addComments({}, 'a', { remoteData: true })
+        .addComments({}, 'explicabo', { remoteData: true })
         .then((r: any) => expect(r.data).toEqual({}));
     });
 
@@ -122,7 +122,7 @@ describe('test TicketingComments', () => {
         .post('/ticketing/comments/batch?remote_data=true')
         .reply(404, { data: {} });
       return expect(
-        async () => await sdk.ticketingComments.addComments({}, 'corrupti', { remoteData: true }),
+        async () => await sdk.ticketingComments.addComments({}, 'vel', { remoteData: true }),
       ).rejects.toThrow();
     });
   });
