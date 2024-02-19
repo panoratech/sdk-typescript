@@ -36,26 +36,26 @@ describe('test Webhook', () => {
   describe('test updateWebhookStatus', () => {
     test('test api call', () => {
       const scope = nock('https://api-dev.panora.dev')
-        .put('/webhook/1481260028')
+        .put('/webhook/8308538584')
         .reply(200, { data: {} });
       return sdk.webhook
-        .updateWebhookStatus('1481260028')
+        .updateWebhookStatus('8308538584')
         .then((r: any) => expect(r.data).toEqual({}));
     });
 
     test('test will throw error if required fields missing', () => {
       const scope = nock('https://api-dev.panora.dev')
-        .put('/webhook/6733192614')
+        .put('/webhook/3951392299')
         .reply(200, { data: {} });
       return expect(async () => await sdk.webhook.updateWebhookStatus()).rejects.toThrow();
     });
 
     test('test will throw error on a non-200 response', () => {
       const scope = nock('https://api-dev.panora.dev')
-        .put('/webhook/9421630415')
+        .put('/webhook/4531907409')
         .reply(404, { data: {} });
       return expect(
-        async () => await sdk.webhook.updateWebhookStatus('9421630415'),
+        async () => await sdk.webhook.updateWebhookStatus('4531907409'),
       ).rejects.toThrow();
     });
   });

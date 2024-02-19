@@ -153,6 +153,7 @@ A list of all services and services methods.
 | Method    | Description|
 | :-------- | :----------|
 | [getEvents](#getevents) | Retrieve Events |
+| [getEventsCount](#geteventscount) | Retrieve Events Count |
 
 
 ## MagicLink
@@ -634,7 +635,7 @@ const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
   const input = {
     description: 'description',
     id_project: 'id_project',
-    scope: ['ut in', 'magna aliqua anim laborum proident'],
+    scope: ['est aute id sed ex', 'velit aute'],
     url: 'url',
   };
   const result = await sdk.webhook.createWebhookMetadata(input);
@@ -1079,6 +1080,14 @@ Retrieve Events
 - Endpoint: /events
 
 
+**Optional Parameters**
+
+Optional parameters are passed as part of the last parameter to the method. Ex. {optionalParam1 : 'value1', optionalParam2: 'value2'}
+
+| Name    | Type| Description |
+| :-------- | :----------| :----------|
+| page | number |  |
+| pageSize | number |  |
 
 
 **Return Type**
@@ -1092,7 +1101,32 @@ import { PanoraSDK } from 'panorasdk';
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
 (async () => {
-  const result = await sdk.events.getEvents();
+  const result = await sdk.events.getEvents({ page: 1, pageSize: 10 });
+  console.log(result);
+})();
+
+```
+
+### **getEventsCount**
+Retrieve Events Count
+- HTTP Method: GET
+- Endpoint: /events/count
+
+
+
+
+**Return Type**
+
+Returns a dict object.
+
+**Example Usage Code Snippet**
+```Typescript
+import { PanoraSDK } from 'panorasdk';
+
+const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
+
+(async () => {
+  const result = await sdk.events.getEventsCount();
   console.log(result);
 })();
 
@@ -1215,7 +1249,7 @@ import { PanoraSDK } from 'panorasdk';
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
 (async () => {
-  const input = { data: {}, headers_: {}, method: 'DELETE', path: 'path' };
+  const input = { data: {}, headers_: {}, method: 'GET', path: 'path' };
   const result = await sdk.passthrough.passthroughRequest(input, 'integrationId', 'linkedUserId');
   console.log(result);
 })();
@@ -2510,18 +2544,18 @@ const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 (async () => {
   const input = {
     account_id: 'account_id',
-    assigned_to: ['laboris aute in deserunt eu', 'amet fugiat dolor consectetur'],
-    comment: ['id eiusmod aliqua reprehenderit laborum', 'voluptate'],
-    completed_at: '1944-03-26T06:54:24.0Z',
+    assigned_to: ['officia', 'aliqua occaecat non'],
+    comment: ['enim dolor nisi do sit', 'laborum minim'],
+    completed_at: '1967-05-22T21:46:39.0Z',
     contact_id: 'contact_id',
-    description: ['Ut sed id', 'Ut'],
-    due_date: '1895-01-22T08:53:33.0Z',
+    description: ['cillum ut dolore labore est', 'dolor consequat eiusmod tempor culpa'],
+    due_date: '1901-11-11T03:10:16.0Z',
     field_mappings: {},
     name: 'name',
     parent_ticket: 'parent_ticket',
     priority: 'priority',
     status: 'status',
-    tags: ['Duis', 'ex velit'],
+    tags: ['nostrud quis irure officia', 'ea sed'],
     type_: 'type',
   };
   const result = await sdk.ticketingTickets.addTicket(input, 'x-connection-token', {
@@ -2713,12 +2747,12 @@ const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
 (async () => {
   const input = {
-    attachments: ['tempor dolore consectetur id consequat', 'minim dolore Duis in pariatur'],
+    attachments: ['eu ut consectetur aute', 'non adipisicing Lorem occaecat'],
     body: 'body',
     contact_id: 'contact_id',
     creator_type: 'creator_type',
     html_body: 'html_body',
-    is_private: false,
+    is_private: true,
     ticket_id: 'ticket_id',
     user_id: 'user_id',
   };

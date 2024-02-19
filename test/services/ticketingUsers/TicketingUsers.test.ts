@@ -25,7 +25,7 @@ describe('test TicketingUsers', () => {
         .get('/ticketing/users?remote_data=true')
         .reply(200, { data: {} });
       return sdk.ticketingUsers
-        .getUsers('enim', { remoteData: true })
+        .getUsers('quo', { remoteData: true })
         .then((r: any) => expect(r.data).toEqual({}));
     });
 
@@ -41,7 +41,7 @@ describe('test TicketingUsers', () => {
         .get('/ticketing/users?remote_data=true')
         .reply(404, { data: {} });
       return expect(
-        async () => await sdk.ticketingUsers.getUsers('aliquid', { remoteData: true }),
+        async () => await sdk.ticketingUsers.getUsers('unde', { remoteData: true }),
       ).rejects.toThrow();
     });
   });
@@ -49,26 +49,26 @@ describe('test TicketingUsers', () => {
   describe('test getUser', () => {
     test('test api call', () => {
       const scope = nock('https://api-dev.panora.dev')
-        .get('/ticketing/users/1552795327?remote_data=true')
+        .get('/ticketing/users/3549959844?remote_data=true')
         .reply(200, { data: {} });
       return sdk.ticketingUsers
-        .getUser('1552795327', { remoteData: true })
+        .getUser('3549959844', { remoteData: true })
         .then((r: any) => expect(r.data).toEqual({}));
     });
 
     test('test will throw error if required fields missing', () => {
       const scope = nock('https://api-dev.panora.dev')
-        .get('/ticketing/users/4859440513?remote_data=true')
+        .get('/ticketing/users/9380458305?remote_data=true')
         .reply(200, { data: {} });
       return expect(async () => await sdk.ticketingUsers.getUser()).rejects.toThrow();
     });
 
     test('test will throw error on a non-200 response', () => {
       const scope = nock('https://api-dev.panora.dev')
-        .get('/ticketing/users/8292260177?remote_data=true')
+        .get('/ticketing/users/1104415821?remote_data=true')
         .reply(404, { data: {} });
       return expect(
-        async () => await sdk.ticketingUsers.getUser('8292260177', { remoteData: true }),
+        async () => await sdk.ticketingUsers.getUser('1104415821', { remoteData: true }),
       ).rejects.toThrow();
     });
   });

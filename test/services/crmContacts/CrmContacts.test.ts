@@ -25,7 +25,7 @@ describe('test CrmContacts', () => {
         .get('/crm/contacts?remote_data=true')
         .reply(200, { data: {} });
       return sdk.crmContacts
-        .getContacts('impedit', { remoteData: true })
+        .getContacts('sit', { remoteData: true })
         .then((r: any) => expect(r.data).toEqual({}));
     });
 
@@ -41,7 +41,7 @@ describe('test CrmContacts', () => {
         .get('/crm/contacts?remote_data=true')
         .reply(404, { data: {} });
       return expect(
-        async () => await sdk.crmContacts.getContacts('recusandae', { remoteData: true }),
+        async () => await sdk.crmContacts.getContacts('dolore', { remoteData: true }),
       ).rejects.toThrow();
     });
   });
@@ -52,7 +52,7 @@ describe('test CrmContacts', () => {
         .post('/crm/contacts?remote_data=true')
         .reply(200, { data: {} });
       return sdk.crmContacts
-        .addContact({}, 'sed', { remoteData: true })
+        .addContact({}, 'fugiat', { remoteData: true })
         .then((r: any) => expect(r.data).toEqual({}));
     });
 
@@ -68,7 +68,7 @@ describe('test CrmContacts', () => {
         .post('/crm/contacts?remote_data=true')
         .reply(404, { data: {} });
       return expect(
-        async () => await sdk.crmContacts.addContact({}, 'ea', { remoteData: true }),
+        async () => await sdk.crmContacts.addContact({}, 'quod', { remoteData: true }),
       ).rejects.toThrow();
     });
   });
@@ -76,26 +76,26 @@ describe('test CrmContacts', () => {
   describe('test updateContact', () => {
     test('test api call', () => {
       const scope = nock('https://api-dev.panora.dev')
-        .patch('/crm/contacts?id=7137792602')
+        .patch('/crm/contacts?id=1136660508')
         .reply(200, { data: {} });
       return sdk.crmContacts
-        .updateContact('7137792602')
+        .updateContact('1136660508')
         .then((r: any) => expect(r.data).toEqual({}));
     });
 
     test('test will throw error if required fields missing', () => {
       const scope = nock('https://api-dev.panora.dev')
-        .patch('/crm/contacts?id=4038087165')
+        .patch('/crm/contacts?id=3344544724')
         .reply(200, { data: {} });
       return expect(async () => await sdk.crmContacts.updateContact()).rejects.toThrow();
     });
 
     test('test will throw error on a non-200 response', () => {
       const scope = nock('https://api-dev.panora.dev')
-        .patch('/crm/contacts?id=6979295948')
+        .patch('/crm/contacts?id=4806978479')
         .reply(404, { data: {} });
       return expect(
-        async () => await sdk.crmContacts.updateContact('6979295948'),
+        async () => await sdk.crmContacts.updateContact('4806978479'),
       ).rejects.toThrow();
     });
   });
@@ -103,26 +103,26 @@ describe('test CrmContacts', () => {
   describe('test getContact', () => {
     test('test api call', () => {
       const scope = nock('https://api-dev.panora.dev')
-        .get('/crm/contacts/2866102589?remote_data=true')
+        .get('/crm/contacts/5909336449?remote_data=true')
         .reply(200, { data: {} });
       return sdk.crmContacts
-        .getContact('2866102589', { remoteData: true })
+        .getContact('5909336449', { remoteData: true })
         .then((r: any) => expect(r.data).toEqual({}));
     });
 
     test('test will throw error if required fields missing', () => {
       const scope = nock('https://api-dev.panora.dev')
-        .get('/crm/contacts/6990918800?remote_data=true')
+        .get('/crm/contacts/2078691894?remote_data=true')
         .reply(200, { data: {} });
       return expect(async () => await sdk.crmContacts.getContact()).rejects.toThrow();
     });
 
     test('test will throw error on a non-200 response', () => {
       const scope = nock('https://api-dev.panora.dev')
-        .get('/crm/contacts/1624543097?remote_data=true')
+        .get('/crm/contacts/1864944236?remote_data=true')
         .reply(404, { data: {} });
       return expect(
-        async () => await sdk.crmContacts.getContact('1624543097', { remoteData: true }),
+        async () => await sdk.crmContacts.getContact('1864944236', { remoteData: true }),
       ).rejects.toThrow();
     });
   });
@@ -133,7 +133,7 @@ describe('test CrmContacts', () => {
         .post('/crm/contacts/batch?remote_data=true')
         .reply(200, { data: {} });
       return sdk.crmContacts
-        .addContacts({}, 'pariatur', { remoteData: true })
+        .addContacts({}, 'repellat', { remoteData: true })
         .then((r: any) => expect(r.data).toEqual({}));
     });
 
@@ -149,7 +149,7 @@ describe('test CrmContacts', () => {
         .post('/crm/contacts/batch?remote_data=true')
         .reply(404, { data: {} });
       return expect(
-        async () => await sdk.crmContacts.addContacts({}, 'nihil', { remoteData: true }),
+        async () => await sdk.crmContacts.addContacts({}, 'aliquam', { remoteData: true }),
       ).rejects.toThrow();
     });
   });
