@@ -1,5 +1,11 @@
 # @panora/sdk-typescript
 
+## 1.3.0
+
+### Minor Changes
+
+- 977eb62: events pagination
+
 ## 1.2.1
 
 ### Patch Changes
