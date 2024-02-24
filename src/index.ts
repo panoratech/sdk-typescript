@@ -18,6 +18,7 @@ import { OrganisationsService } from './services/organisations/Organisations';
 import { PassthroughService } from './services/passthrough/Passthrough';
 import { ProjectsService } from './services/projects/Projects';
 import { ProtectedService } from './services/protected/Protected';
+import { StytchService } from './services/stytch/Stytch';
 import { TicketingAccountsService } from './services/ticketingAccounts/TicketingAccounts';
 import { TicketingAttachmentsService } from './services/ticketingAttachments/TicketingAttachments';
 import { TicketingCommentsService } from './services/ticketingComments/TicketingComments';
@@ -85,6 +86,7 @@ export class PanoraSDK {
   public passthrough: PassthroughService;
   public projects: ProjectsService;
   public protected: ProtectedService;
+  public stytch: StytchService;
   public ticketingAccounts: TicketingAccountsService;
   public ticketingAttachments: TicketingAttachmentsService;
   public ticketingComments: TicketingCommentsService;
@@ -116,6 +118,7 @@ export class PanoraSDK {
     this.passthrough = new PassthroughService(accessToken);
     this.projects = new ProjectsService(accessToken);
     this.protected = new ProtectedService(accessToken);
+    this.stytch = new StytchService(accessToken);
     this.ticketingAccounts = new TicketingAccountsService(accessToken);
     this.ticketingAttachments = new TicketingAttachmentsService(accessToken);
     this.ticketingComments = new TicketingCommentsService(accessToken);
@@ -152,6 +155,7 @@ export class PanoraSDK {
     this.passthrough.setBaseUrl(url);
     this.projects.setBaseUrl(url);
     this.protected.setBaseUrl(url);
+    this.stytch.setBaseUrl(url);
     this.ticketingAccounts.setBaseUrl(url);
     this.ticketingAttachments.setBaseUrl(url);
     this.ticketingComments.setBaseUrl(url);
@@ -188,6 +192,7 @@ export class PanoraSDK {
     this.passthrough.setAccessToken(accessToken);
     this.projects.setAccessToken(accessToken);
     this.protected.setAccessToken(accessToken);
+    this.stytch.setAccessToken(accessToken);
     this.ticketingAccounts.setAccessToken(accessToken);
     this.ticketingAttachments.setAccessToken(accessToken);
     this.ticketingComments.setAccessToken(accessToken);

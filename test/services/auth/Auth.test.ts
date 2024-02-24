@@ -59,4 +59,13 @@ describe('test Auth', () => {
       return sdk.auth.generateApiKey({}).then((r: any) => expect(r.data).toEqual({}));
     });
   });
+
+  describe('test authControllerCallback', () => {
+    test('test api call', () => {
+      const scope = nock('https://api-dev.panora.dev')
+        .get('/auth/callback')
+        .reply(200, { data: {} });
+      return sdk.auth.authControllerCallback().then((r: any) => expect(r.data).toEqual({}));
+    });
+  });
 });
