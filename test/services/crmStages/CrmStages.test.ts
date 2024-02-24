@@ -25,7 +25,7 @@ describe('test CrmStages', () => {
         .get('/crm/stages?remote_data=true')
         .reply(200, { data: {} });
       return sdk.crmStages
-        .getStages('esse', { remoteData: true })
+        .getStages('enim', { remoteData: true })
         .then((r: any) => expect(r.data).toEqual({}));
     });
 
@@ -41,7 +41,7 @@ describe('test CrmStages', () => {
         .get('/crm/stages?remote_data=true')
         .reply(404, { data: {} });
       return expect(
-        async () => await sdk.crmStages.getStages('natus', { remoteData: true }),
+        async () => await sdk.crmStages.getStages('ad', { remoteData: true }),
       ).rejects.toThrow();
     });
   });
@@ -49,26 +49,26 @@ describe('test CrmStages', () => {
   describe('test getStage', () => {
     test('test api call', () => {
       const scope = nock('https://api-dev.panora.dev')
-        .get('/crm/stages/1450815172?remote_data=true')
+        .get('/crm/stages/3897883281?remote_data=true')
         .reply(200, { data: {} });
       return sdk.crmStages
-        .getStage('1450815172', { remoteData: true })
+        .getStage('3897883281', { remoteData: true })
         .then((r: any) => expect(r.data).toEqual({}));
     });
 
     test('test will throw error if required fields missing', () => {
       const scope = nock('https://api-dev.panora.dev')
-        .get('/crm/stages/7458917368?remote_data=true')
+        .get('/crm/stages/9885157273?remote_data=true')
         .reply(200, { data: {} });
       return expect(async () => await sdk.crmStages.getStage()).rejects.toThrow();
     });
 
     test('test will throw error on a non-200 response', () => {
       const scope = nock('https://api-dev.panora.dev')
-        .get('/crm/stages/5815269303?remote_data=true')
+        .get('/crm/stages/2462169664?remote_data=true')
         .reply(404, { data: {} });
       return expect(
-        async () => await sdk.crmStages.getStage('5815269303', { remoteData: true }),
+        async () => await sdk.crmStages.getStage('2462169664', { remoteData: true }),
       ).rejects.toThrow();
     });
   });

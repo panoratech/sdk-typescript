@@ -22,10 +22,10 @@ describe('test Events', () => {
   describe('test getEvents', () => {
     test('test api call', () => {
       const scope = nock('https://api-dev.panora.dev')
-        .get('/events?page=1&pageSize=9')
+        .get('/events?page=1&pageSize=7')
         .reply(200, { data: {} });
       return sdk.events
-        .getEvents({ page: 1, pageSize: 9 })
+        .getEvents({ page: 1, pageSize: 7 })
         .then((r: any) => expect(r.data).toEqual({}));
     });
   });

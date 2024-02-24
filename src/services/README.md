@@ -8,6 +8,8 @@ A list of all services and services methods.
 
     - [Protected](#protected)
 
+    - [Stytch](#stytch)
+
     - [Auth](#auth)
 
     - [Connections](#connections)
@@ -83,6 +85,13 @@ A list of all services and services methods.
 | [getHelloProtected](#gethelloprotected) |  |
 
 
+## Stytch
+
+| Method    | Description|
+| :-------- | :----------|
+| [stytchprotected](#stytchprotected) |  |
+
+
 ## Auth
 
 | Method    | Description|
@@ -92,6 +101,7 @@ A list of all services and services methods.
 | [getUsers](#getusers) | Get users |
 | [getApiKeys](#getapikeys) | Retrieve API Keys |
 | [generateApiKey](#generateapikey) | Create API Key |
+| [authControllerCallback](#authcontrollercallback) |  |
 
 
 ## Connections
@@ -408,6 +418,32 @@ const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 ```
 
 
+### **stytchprotected**
+
+- HTTP Method: GET
+- Endpoint: /stytch
+
+
+
+
+**Return Type**
+
+Returns a dict object.
+
+**Example Usage Code Snippet**
+```Typescript
+import { PanoraSDK } from 'panorasdk';
+
+const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
+
+(async () => {
+  const result = await sdk.stytch.stytchprotected();
+  console.log(result);
+})();
+
+```
+
+
 ### **signUp**
 Register
 - HTTP Method: POST
@@ -551,6 +587,31 @@ const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
 ```
 
+### **authControllerCallback**
+
+- HTTP Method: GET
+- Endpoint: /auth/callback
+
+
+
+
+**Return Type**
+
+Returns a dict object.
+
+**Example Usage Code Snippet**
+```Typescript
+import { PanoraSDK } from 'panorasdk';
+
+const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
+
+(async () => {
+  const result = await sdk.auth.authControllerCallback();
+  console.log(result);
+})();
+
+```
+
 
 ### **handleOAuthCallback**
 Capture oAuth callback
@@ -635,7 +696,7 @@ const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
   const input = {
     description: 'description',
     id_project: 'id_project',
-    scope: ['est aute id sed ex', 'velit aute'],
+    scope: ['dolor cupidatat labore non', 'anim mollit dolore minim quis'],
     url: 'url',
   };
   const result = await sdk.webhook.createWebhookMetadata(input);
@@ -1249,7 +1310,7 @@ import { PanoraSDK } from 'panorasdk';
 const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
 (async () => {
-  const input = { data: {}, headers_: {}, method: 'GET', path: 'path' };
+  const input = { data: {}, headers_: {}, method: 'PUT', path: 'path' };
   const result = await sdk.passthrough.passthroughRequest(input, 'integrationId', 'linkedUserId');
   console.log(result);
 })();
@@ -2544,18 +2605,18 @@ const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 (async () => {
   const input = {
     account_id: 'account_id',
-    assigned_to: ['officia', 'aliqua occaecat non'],
-    comment: ['enim dolor nisi do sit', 'laborum minim'],
-    completed_at: '1967-05-22T21:46:39.0Z',
+    assigned_to: ['incididunt ut cillum', 'exercitation non officia sint irure'],
+    comment: ['aliqua Excepteur tempor amet', 'sed amet aute'],
+    completed_at: '1933-05-01T10:55:31.0Z',
     contact_id: 'contact_id',
-    description: ['cillum ut dolore labore est', 'dolor consequat eiusmod tempor culpa'],
-    due_date: '1901-11-11T03:10:16.0Z',
+    description: ['incididunt tempor adipisicing qui et', 'minim'],
+    due_date: '1908-08-24T14:29:49.0Z',
     field_mappings: {},
     name: 'name',
     parent_ticket: 'parent_ticket',
     priority: 'priority',
     status: 'status',
-    tags: ['nostrud quis irure officia', 'ea sed'],
+    tags: ['officia', 'esse'],
     type_: 'type',
   };
   const result = await sdk.ticketingTickets.addTicket(input, 'x-connection-token', {
@@ -2747,7 +2808,7 @@ const sdk = new PanoraSDK({ accessToken: process.env.PANORASDK_ACCESS_TOKEN });
 
 (async () => {
   const input = {
-    attachments: ['eu ut consectetur aute', 'non adipisicing Lorem occaecat'],
+    attachments: ['cillum esse Excepteur', 'ad eu'],
     body: 'body',
     contact_id: 'contact_id',
     creator_type: 'creator_type',

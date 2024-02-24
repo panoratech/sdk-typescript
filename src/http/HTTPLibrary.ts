@@ -130,13 +130,13 @@ export default class HTTPLibrary implements HTTPClient {
 
     let userAgent = '';
     if (typeof window !== 'undefined') {
-      userAgent = `${userAgentBase} ${navigator.userAgent}`;
+      return {};
     } else if (typeof process !== 'undefined') {
-      userAgent = `${userAgentBase} Node.js/${process.version}`;
+      userAgent = `Node.js/${process.version} ${userAgentBase}`;
     } else if (typeof Deno !== 'undefined') {
-      userAgent = `${userAgentBase} Deno/${Deno.version.deno}`;
+      userAgent = `Deno/${Deno.version.deno} ${userAgentBase}`;
     } else if (typeof Bun !== 'undefined') {
-      userAgent = `${userAgentBase} Bun/${Bun.version}`;
+      userAgent = `Bun/${Bun.version} ${userAgentBase}`;
     } else {
       userAgent = userAgentBase;
     }

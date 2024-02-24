@@ -110,4 +110,19 @@ export class AuthService extends BaseService {
     const responseModel = response.data;
     return responseModel;
   }
+
+  async authControllerCallback(): Promise<any> {
+    const urlEndpoint = '/auth/callback';
+    const finalUrl = encodeURI(`${this.baseUrl + urlEndpoint}`);
+    const response: any = await this.httpClient.get(
+      finalUrl,
+      {},
+      {
+        ...this.getAuthorizationHeader(),
+      },
+      true,
+    );
+    const responseModel = response.data;
+    return responseModel;
+  }
 }

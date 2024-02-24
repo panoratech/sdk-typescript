@@ -1,6 +1,6 @@
 {
-  "liblabVersion": "0.1.35",
-  "date": "2024-02-19T07:12:48.121Z",
+  "liblabVersion": "1.1.37",
+  "date": "2024-02-24T12:05:54.870Z",
   "config": {
     "authentication": {
       "access": {
@@ -14,7 +14,7 @@
     "inputFileName": "/tmp/resources/spec/open-api-spec.json",
     "environmentVariables": [],
     "fileOutput": "/tmp",
-    "tempDir": "/tmp/liblab-codegen-0.1.35-DVT4s1",
+    "tempDir": "/tmp/liblab-codegen-1.1.37-VkOkf4",
     "inferServiceNames": false,
     "httpLibrary": {
       "name": "axios",
@@ -72,6 +72,7 @@
     "homepage": "",
     "enforceRequestValidation": false,
     "denoteCommon": false,
+    "includeOptionalSnippetParameters": true,
     "hooks": {
       "enabled": false,
       "sourceDir": ""
@@ -259,6 +260,7 @@
     "src/services/projects/index.ts",
     "src/services/projects/models/CreateProjectDto.ts",
     "src/services/protected/Protected.ts",
+    "src/services/stytch/Stytch.ts",
     "src/services/ticketingAccounts/TicketingAccounts.ts",
     "src/services/ticketingAccounts/index.ts",
     "src/services/ticketingAccounts/models/GetAccountResponse.ts",
@@ -331,6 +333,7 @@
     "test/services/passthrough/Passthrough.test.ts",
     "test/services/projects/Projects.test.ts",
     "test/services/protected/Protected.test.ts",
+    "test/services/stytch/Stytch.test.ts",
     "test/services/ticketingAccounts/TicketingAccounts.test.ts",
     "test/services/ticketingAttachments/TicketingAttachments.test.ts",
     "test/services/ticketingComments/TicketingComments.test.ts",

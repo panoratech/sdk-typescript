@@ -25,7 +25,7 @@ describe('test CrmCompanies', () => {
         .get('/crm/companies?remote_data=true')
         .reply(200, { data: {} });
       return sdk.crmCompanies
-        .getCompanies('soluta', { remoteData: true })
+        .getCompanies('sunt', { remoteData: true })
         .then((r: any) => expect(r.data).toEqual({}));
     });
 
@@ -41,7 +41,7 @@ describe('test CrmCompanies', () => {
         .get('/crm/companies?remote_data=true')
         .reply(404, { data: {} });
       return expect(
-        async () => await sdk.crmCompanies.getCompanies('veniam', { remoteData: true }),
+        async () => await sdk.crmCompanies.getCompanies('nemo', { remoteData: true }),
       ).rejects.toThrow();
     });
   });
@@ -52,7 +52,7 @@ describe('test CrmCompanies', () => {
         .post('/crm/companies?remote_data=true')
         .reply(200, { data: {} });
       return sdk.crmCompanies
-        .addCompany({}, 'placeat', { remoteData: true })
+        .addCompany({}, 'amet', { remoteData: true })
         .then((r: any) => expect(r.data).toEqual({}));
     });
 
@@ -68,7 +68,7 @@ describe('test CrmCompanies', () => {
         .post('/crm/companies?remote_data=true')
         .reply(404, { data: {} });
       return expect(
-        async () => await sdk.crmCompanies.addCompany({}, 'itaque', { remoteData: true }),
+        async () => await sdk.crmCompanies.addCompany({}, 'accusamus', { remoteData: true }),
       ).rejects.toThrow();
     });
   });
@@ -76,26 +76,26 @@ describe('test CrmCompanies', () => {
   describe('test updateCompany', () => {
     test('test api call', () => {
       const scope = nock('https://api-dev.panora.dev')
-        .patch('/crm/companies?id=7258980738')
+        .patch('/crm/companies?id=7517121728')
         .reply(200, { data: {} });
       return sdk.crmCompanies
-        .updateCompany('7258980738')
+        .updateCompany('7517121728')
         .then((r: any) => expect(r.data).toEqual({}));
     });
 
     test('test will throw error if required fields missing', () => {
       const scope = nock('https://api-dev.panora.dev')
-        .patch('/crm/companies?id=9046831649')
+        .patch('/crm/companies?id=2201365563')
         .reply(200, { data: {} });
       return expect(async () => await sdk.crmCompanies.updateCompany()).rejects.toThrow();
     });
 
     test('test will throw error on a non-200 response', () => {
       const scope = nock('https://api-dev.panora.dev')
-        .patch('/crm/companies?id=8027648179')
+        .patch('/crm/companies?id=1001230332')
         .reply(404, { data: {} });
       return expect(
-        async () => await sdk.crmCompanies.updateCompany('8027648179'),
+        async () => await sdk.crmCompanies.updateCompany('1001230332'),
       ).rejects.toThrow();
     });
   });
@@ -103,26 +103,26 @@ describe('test CrmCompanies', () => {
   describe('test getCompany', () => {
     test('test api call', () => {
       const scope = nock('https://api-dev.panora.dev')
-        .get('/crm/companies/6916411470?remote_data=true')
+        .get('/crm/companies/4992271085?remote_data=true')
         .reply(200, { data: {} });
       return sdk.crmCompanies
-        .getCompany('6916411470', { remoteData: true })
+        .getCompany('4992271085', { remoteData: true })
         .then((r: any) => expect(r.data).toEqual({}));
     });
 
     test('test will throw error if required fields missing', () => {
       const scope = nock('https://api-dev.panora.dev')
-        .get('/crm/companies/1521269557?remote_data=true')
+        .get('/crm/companies/4187247031?remote_data=true')
         .reply(200, { data: {} });
       return expect(async () => await sdk.crmCompanies.getCompany()).rejects.toThrow();
     });
 
     test('test will throw error on a non-200 response', () => {
       const scope = nock('https://api-dev.panora.dev')
-        .get('/crm/companies/2650540565?remote_data=true')
+        .get('/crm/companies/1414421714?remote_data=true')
         .reply(404, { data: {} });
       return expect(
-        async () => await sdk.crmCompanies.getCompany('2650540565', { remoteData: true }),
+        async () => await sdk.crmCompanies.getCompany('1414421714', { remoteData: true }),
       ).rejects.toThrow();
     });
   });
@@ -133,7 +133,7 @@ describe('test CrmCompanies', () => {
         .post('/crm/companies/batch?remote_data=true')
         .reply(200, { data: {} });
       return sdk.crmCompanies
-        .addCompanies({}, 'porro', { remoteData: true })
+        .addCompanies({}, 'ut', { remoteData: true })
         .then((r: any) => expect(r.data).toEqual({}));
     });
 
@@ -149,7 +149,7 @@ describe('test CrmCompanies', () => {
         .post('/crm/companies/batch?remote_data=true')
         .reply(404, { data: {} });
       return expect(
-        async () => await sdk.crmCompanies.addCompanies({}, 'quam', { remoteData: true }),
+        async () => await sdk.crmCompanies.addCompanies({}, 'exercitationem', { remoteData: true }),
       ).rejects.toThrow();
     });
   });
